@@ -7,12 +7,12 @@ CZE_NOF = {
 	color_ui = rgb { 77 138 132 }
 }
 CZE_west_slav_union = {	
-    color = rgb { 12 92 84 }
-	color_ui = rgb { 12 92 84 }
+    color = rgb { 39 130 108 }
+	color_ui = rgb { 39 130 108 }
 }
 CZE_pan_slav = {	
-    color = rgb { 75 107 104 }
-	color_ui = rgb { 75 107 104 }
+    color = rgb { 34 110 114 }
+	color_ui = rgb { 34 110 114 }
 }
 MAL_UK = {
     color = rgb { 201 56 93 }
