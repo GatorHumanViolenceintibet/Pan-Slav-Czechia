@@ -1833,6 +1833,8 @@ country_event = {
 		}
 		set_cosmetic_tag = CZE_NOF
 		set_country_flag = CZE_No_Event
+		set_country_flag = CZE_Slovakia_Autonomy
+		activate_mission = CZE_slovak_reintegration_mission
 	}
 	
 	option = {

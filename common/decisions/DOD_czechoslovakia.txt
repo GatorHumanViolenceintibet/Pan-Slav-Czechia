@@ -27,6 +27,23 @@ CZE_the_powderkeg = {
 		}
 		remove_effect = {
 			YUG = { country_event = { hours = 1 id = czech.65 } }
+			add_state_core = 105
+			add_state_core = 108
+			add_state_core = 802
+			add_state_core = 106
+			add_state_core = 102
+			add_state_core = 853
+			add_state_core = 804
+			add_state_core = 109
+			add_state_core = 163
+			add_state_core = 764
+			add_state_core = 803
+			add_state_core = 45
+			add_state_core = 107
+			add_state_core = 103
+			add_state_core = 104
+			add_state_core = 736
+			add_state_core = 852
 		}
 	}
 	CZE_Bulgaria = {
@@ -57,6 +74,12 @@ CZE_the_powderkeg = {
 		}
 		remove_effect = {
 			BUL = { country_event = { hours = 1 id = czech.66 } }
+			add_state_core = 106
+			add_state_core = 212
+			add_state_core = 801
+			add_state_core = 803
+			add_state_core = 48
+			add_state_core = 211
 		}
 	}
 	CZE_Greece = {
@@ -86,6 +109,8 @@ CZE_the_powderkeg = {
 		}
 		remove_effect = {
 			GRE = { country_event = { hours = 1 id = czech.67 } }
+			add_state_core = 731
+			add_state_core = 184
 		}
 	}
 	CZE_Albania = {
@@ -117,6 +142,8 @@ CZE_the_powderkeg = {
 		}
 		remove_effect = {
 			ALB = { country_event = { hours = 1 id = czech.68 } }
+			add_state_core = 805
+			add_state_core = 44
 		}
 	}
 }
@@ -213,6 +240,97 @@ CZE_slavic_alignment1 = {
 				target = HUN
 				expire = 0
 			}
+		}
+	}
+	CZE_form_west_slav_union = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+			owns_state = 72
+			owns_state = 94
+			owns_state = 91
+			owns_state = 97
+			owns_state = 807
+			owns_state = 87
+			owns_state = 92
+			owns_state = 93
+			owns_state = 89
+			owns_state = 784
+			owns_state = 86
+			owns_state = 762
+			owns_state = 98
+			owns_state = 88
+			owns_state = 90
+			owns_state = 95
+			owns_state = 96
+			owns_state = 85
+			owns_state = 10
+			owns_state = 70
+			owns_state = 71
+			owns_state = 664
+			owns_state = 74
+			owns_state = 73
+			owns_state = 69
+			owns_state = 75
+			owns_state = 9
+			owns_state = 10
+			}
+			
+		}
+			
+		fire_only_once = yes
+		
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+		    drop_cosmetic_tag = CZE_NOF
+			set_cosmetic_tag = CZE_west_slav_union
+			add_state_core = 72
+			add_state_core = 94
+			add_state_core = 91
+			add_state_core = 97
+			add_state_core = 807
+			add_state_core = 87
+			add_state_core = 92
+			add_state_core = 93
+			add_state_core = 89
+			add_state_core = 784
+			add_state_core = 86
+			add_state_core = 762
+			add_state_core = 98
+			add_state_core = 88
+			add_state_core = 90
+			add_state_core = 95
+			add_state_core = 96
+			add_state_core = 85
+			add_state_core = 10
+			add_state_core = 84
+			add_state_core = 82
+			add_state_core = 80
+			add_state_core = 76
+			add_state_core = 77
+			add_state_core = 766
+			add_state_core = 79
+			add_state_core = 78
+			add_state_core = 83
+			add_state_core = 81
+			add_state_core = 46
+			add_state_core = 43
+			add_state_core = 155
+			add_state_core = 154
 		}
 	}
 }
@@ -479,9 +597,7 @@ CZE_standing_alone = {
 		}
 		available = {
 		}
-		
-		fire_only_once = yes
-		
+				
 		days_remove = 25
 		
 		fire_only_once = yes
@@ -653,10 +769,11 @@ CZE_crush_slovak_nationalists = {
 		is_good = no
 
 		timeout_effect = {
-		    swap_ideas = {
-				remove_idea = CZE_divided_nation
-				add_idea = CZE_slovaks_suppressed
-			}
+			remove_ideas = CZE_divided_nation
+			add_timed_idea = {
+                idea = CZE_slovaks_suppressed
+                days = 180
+            }
 			if = {
 				limit = {
 					SLO = {
@@ -1407,6 +1524,227 @@ CZE_progress_crushing_decisions = {
 
 		timeout_effect = {
 			clr_country_flag = CZE_arrest_slovaks_flag
+		}
+	}
+}
+
+CZE_reintegrate_slovakia = {
+	
+	CZE_slovak_reintegration_mission = {
+
+		priority = 10
+
+		icon = GFX_decision_revolt
+		
+		allowed = { tag = CZE }
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 150
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = CZE_Slovakia_Autonomy
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		timeout_effect = {
+		    annex_country = {
+                target = SLO
+                transfer_troops = yes
+            }
+			SLO = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			70 = {
+			    add_core_of = CZE
+			}
+			71 = {
+			    add_core_of = CZE
+			}
+			73 = {
+			    add_core_of = CZE
+			}
+			664 = {
+			    add_core_of = CZE
+			}
+		}
+	}
+}
+
+CZE_fascist_marches = {
+	
+	CZE_march_in_bohemia = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		days_remove = 90
+				
+		visible = {
+			has_completed_focus = CZE_rally_czech_nationalists
+			NOT = {
+			    has_government = fascism
+			}
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+		}
+	}
+	CZE_march_in_moravia = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		days_remove = 70
+				
+		visible = {
+			has_completed_focus = CZE_rally_czech_nationalists
+			NOT = {
+			    has_government = fascism
+			}
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.07
+            }
+		}
+	}
+	CZE_march_in_the_sudetenland = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		days_remove = 21
+				
+		visible = {
+			has_completed_focus = CZE_rally_czech_nationalists
+			NOT = {
+			    has_government = fascism
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.02
+            }
+		}
+	}
+	CZE_march_in_eastern_sudetenland = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		days_remove = 21
+				
+		visible = {
+			has_completed_focus = CZE_rally_czech_nationalists
+			NOT = {
+			    has_government = fascism
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.02
+            }
+		}
+	}
+	CZE_march_in_zaolzie = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		days_remove = 35
+				
+		visible = {
+			has_completed_focus = CZE_rally_czech_nationalists
+			NOT = {
+			    has_government = fascism
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.04
+            }
 		}
 	}
 }

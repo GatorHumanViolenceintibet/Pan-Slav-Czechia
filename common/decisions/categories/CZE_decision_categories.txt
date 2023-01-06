@@ -124,4 +124,32 @@ CZE_progress_crushing_decisions = {
 	}
 }
 
+CZE_reintegrate_slovakia = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		set_country_flag = CZE_Slovakia_Autonomy
+	}
+}
+CZE_fascist_marches = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		set_country_flag = CZE_Slovakia_Autonomy
+	}
+}
 

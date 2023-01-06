@@ -2088,7 +2088,7 @@
 		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = CZE_strategy_decisions }
 		mutually_exclusive = { focus = CZE_trust_in_the_west focus = CZE_an_entente_of_our_own focus = CZE_german_leanings }
-		x = 2
+		x = 5
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
@@ -2121,7 +2121,7 @@
 		completion_reward = {
 		    add_popularity = {
                 ideology = fascism
-                popularity = 0.3
+                popularity = 0.2
             }
 		    add_timed_idea = {
                 idea = CZE_nationalism
@@ -2180,10 +2180,10 @@
 	focus = {
 		id = CZE_pursue_pan_slavism
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = CZE_stage_the_coup }
+		prerequisite = { focus = CZE_the_slovak_question }
 		x = 0
 		y = 1
-		relative_position_id = CZE_stage_the_coup
+		relative_position_id = CZE_the_slovak_question
 
 		cost = 10
 
@@ -2220,7 +2220,7 @@
 		id = CZE_slavic_unity
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = CZE_pursue_pan_slavism }
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = CZE_pursue_pan_slavism
 
@@ -2258,9 +2258,9 @@
 	focus = {
 		id = CZE_the_devil_next_door
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = CZE_slavic_unity }
-		x = 0
-		y = 3
+		prerequisite = { focus = CZE_pursue_pan_slavism }
+		x = -4
+		y = 1
 		relative_position_id = CZE_pursue_pan_slavism
 
 		cost = 5
@@ -2304,8 +2304,8 @@
 		icon = GFX_focus_befriend_italy
 		prerequisite = { focus = CZE_the_devil_next_door }
 		mutually_exclusive = { focus = CZE_infiltrate_the_nazi_regime }
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = CZE_the_devil_next_door
 
 		cost = 5
@@ -2346,8 +2346,8 @@
 		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = CZE_the_devil_next_door }
 		mutually_exclusive = { focus = CZE_ally_italy }
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = CZE_the_devil_next_door
 
 		cost = 5
@@ -2386,7 +2386,7 @@
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = CZE_infiltrate_the_nazi_regime focus = CZE_ally_italy }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = CZE_the_devil_next_door
 
 		cost = 5
@@ -2433,10 +2433,49 @@
 	focus = {
 		id = CZE_securing_the_powderkeg
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = CZE_preemptive_strike }
+		prerequisite = { focus = CZE_slavic_unity }
 		x = 0
 		y = 1
-		relative_position_id = CZE_preemptive_strike
+		relative_position_id = CZE_slavic_unity
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_go_left
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_democratic_bastion
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		    
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = CZE_powderkeg
+		}
+	}
+
+	focus = {
+		id = CZE_gut_turkey
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = CZE_securing_the_powderkeg }
+		x = 0
+		y = 1
+		relative_position_id = CZE_securing_the_powderkeg
 
 		cost = 5
 
@@ -2472,10 +2511,11 @@
 	focus = {
 		id = CZE_crush_bolshevism
 		icon = GFX_focus_attack_soviet
-		prerequisite = { focus = CZE_securing_the_powderkeg }
-		x = 0
-		y = 1
-		relative_position_id = CZE_securing_the_powderkeg
+		prerequisite = { focus = CZE_preemptive_strike }
+		prerequisite = { focus = CZE_gut_turkey }
+		x = 4
+		y = 2
+		relative_position_id = CZE_preemptive_strike
 
 		cost = 10
 
@@ -2668,7 +2708,7 @@
 		id = CZE_slavic_finnish_alliance
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = CZE_preemptive_strike }
-		x = 2
+		x = 6
 		y = 1
 		relative_position_id = CZE_preemptive_strike
 
@@ -2738,7 +2778,7 @@
 		id = CZE_secure_the_baltics
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = CZE_preemptive_strike }
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = CZE_preemptive_strike
 
@@ -3298,7 +3338,7 @@
 		id = CZE_pursue_corporatism
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = CZE_stage_the_coup }
-		x = 4
+		x = -4
 		y = 1
 		relative_position_id = CZE_stage_the_coup
 
@@ -3332,12 +3372,88 @@
 			add_ideas = CZE_corporatism
 		}
 	}
+
+	focus = {
+		id = CZE_expand_the_czechoslovak_armoury
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = CZE_pursue_corporatism }
+		x = 1
+		y = 1
+		relative_position_id = CZE_pursue_corporatism
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_go_left
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_democratic_bastion
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CZE_creating_agricultural_autarky
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = CZE_pursue_corporatism }
+		x = -1
+		y = 1
+		relative_position_id = CZE_pursue_corporatism
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_go_left
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_democratic_bastion
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
 	
 	focus = {
 		id = CZE_the_slovak_question
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = CZE_stage_the_coup }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = CZE_stage_the_coup
 
@@ -3375,10 +3491,10 @@
 	focus = {
 		id = CZE_state_education
 		icon = GFX_focus_research
-		prerequisite = { focus = CZE_stage_the_coup }
-		x = 6
+		prerequisite = { focus = CZE_legionary_veteran_training_centers }
+		x = 0
 		y = 1
-		relative_position_id = CZE_stage_the_coup
+		relative_position_id = CZE_legionary_veteran_training_centers
 
 		cost = 3
 
@@ -3411,14 +3527,53 @@
 			add_ideas = CZE_nationalist_education
 		}
 	}
-	
+
+	focus = {
+		id = CZE_legionary_veteran_training_centers
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = CZE_stage_the_coup }
+		x = 4
+		y = 1
+		relative_position_id = CZE_stage_the_coup
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_go_left
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_democratic_bastion
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {
 		id = CZE_czech_shocktroopers
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = CZE_stage_the_coup }
-		x = 8
+		prerequisite = { focus = CZE_legionary_veteran_training_centers }
+		x = -2
 		y = 1
-		relative_position_id = CZE_stage_the_coup
+		relative_position_id = CZE_legionary_veteran_training_centers
 
 		cost = 5
 
@@ -3459,6 +3614,45 @@
 				technology = tech_mountaineers2
 			}
 			add_ideas = CZE_shock_troopers
+		}
+	}
+
+	focus = {
+		id = CZE_legionary_youth
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = CZE_legionary_veteran_training_centers }
+		x = 2
+		y = 1
+		relative_position_id = CZE_legionary_veteran_training_centers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_go_left
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = CZE_democratic_bastion
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
 		}
 	}
 
@@ -3649,7 +3843,7 @@
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = CZE_strategy_decisions }
 		mutually_exclusive = { focus = CZE_german_leanings focus = CZE_an_entente_of_our_own focus = CZE_rally_czech_nationalists }
-		x = 12
+		x = 14
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
@@ -3862,7 +4056,7 @@
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = CZE_strategy_decisions }
 		mutually_exclusive = { focus = CZE_trust_in_the_west focus = CZE_german_leanings focus = CZE_rally_czech_nationalists }
-		x = 16
+		x = 19
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
@@ -4181,7 +4375,7 @@
 		id = CZE_czechoslovak_legion
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = CZE_strategy_decisions }
-		x = 18
+		x = 23
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
@@ -4217,7 +4411,7 @@
 	focus = {
 		id = CZE_military_research_institute
 		icon = GFX_focus_CZE_military_research_institute
-		x = 24
+		x = 30
 		y = 0
 		relative_position_id = CZE_strategy_decisions
 
