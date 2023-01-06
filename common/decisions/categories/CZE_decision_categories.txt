@@ -1,0 +1,127 @@
+################
+##### CZE ######
+################
+
+CZE_the_powderkeg = { 
+
+	icon = GFX_decision_category_generic_mountain_fortification
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_completed_focus = CZE_securing_the_powderkeg
+	}
+}
+CZE_slavic_alignment1 = { 
+
+	icon = GFX_decision_category_generic_mountain_fortification
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+	    OR = {
+		    has_completed_focus = CZE_slavic_unity
+			has_completed_focus = CZE_slavic_brotherhood
+		}
+	}
+}
+
+CZE_standing_alone = { 
+
+	icon = GFX_decision_category_generic_mountain_fortification
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_completed_focus = CZE_infiltrate_the_nazi_regime
+	}
+}
+
+CZE_italian_slav_alliance = { 
+
+	icon = GFX_decision_category_generic_mountain_fortification
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_completed_focus = CZE_ally_italy
+	}
+}
+
+CZE_field_command_for_radola_gadja = { 
+
+	icon = GFX_decision_category_generic_mountain_fortification
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_completed_focus = CZE_stage_the_coup
+	}
+}
+
+CZE_crush_slovak_nationalists = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_completed_focus = CZE_stage_the_coup
+	}
+}
+
+CZE_delay_slovak_uprising = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_country_flag = kill_slovaks
+	}
+}
+
+CZE_progress_crushing_decisions = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_country_flag = kill_slovaks
+	}
+}
+
+

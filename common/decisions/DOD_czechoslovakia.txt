@@ -1,0 +1,1445 @@
+CZE_the_powderkeg = {
+	
+	CZE_Yugoslavia = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_securing_the_powderkeg
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			YUG = { country_event = { hours = 1 id = czech.65 } }
+		}
+	}
+	CZE_Bulgaria = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		
+		visible = {
+			has_completed_focus = CZE_securing_the_powderkeg
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			BUL = { country_event = { hours = 1 id = czech.66 } }
+		}
+	}
+	CZE_Greece = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_securing_the_powderkeg
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			GRE = { country_event = { hours = 1 id = czech.67 } }
+		}
+	}
+	CZE_Albania = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			NOT = {
+			    is_in_faction_with = ITA
+			}
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_securing_the_powderkeg
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			ALB = { country_event = { hours = 1 id = czech.68 } }
+		}
+	}
+}
+
+CZE_slavic_alignment1 = {
+	
+	CZE_Poland = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_slavic_unity
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			POL = { country_event = { hours = 1 id = czech.69 } }
+		}
+	}
+	CZE_Romania = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		
+		visible = {
+			has_completed_focus = CZE_slavic_unity
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			ROM = { country_event = { hours = 1 id = czech.70 } }
+		}
+	}
+	CZE_dismember_hungary = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+		
+		days_remove = 14
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_slavic_unity
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = HUN
+				expire = 0
+			}
+		}
+	}
+}
+
+CZE_italian_slav_alliance = {
+	
+	CZE_joint_planning = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 20
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			ITA = {
+			    add_ideas = CZE_joint_planning
+			}
+			add_ideas = CZE_joint_planning
+		}
+	}
+	CZE_purchase_italian_guns = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 45
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			create_railway_gun = {
+                equipment = railway_gun_equipment_1
+	            name = TAG_new_railway_gun
+	            location = 3569
+            }
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2500
+                producer = ITA
+            }
+		}
+	}
+	CZE_purchase_italian_support_equipment = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 45
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 1000
+                producer = ITA
+            }
+		}
+	}
+	CZE_purchase_italian_artillery = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 45
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 1000
+                producer = ITA
+            }
+			add_equipment_to_stockpile = {
+    			type = anti_tank_equipment  
+    			amount = 500
+		    }
+			add_equipment_to_stockpile = {
+    			type = anti_air_equipment  
+    			amount = 500
+			}
+		}
+	}
+	CZE_purchase_italian_tanks = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 45
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			    add_equipment_to_stockpile = {
+    			    type = medium_tank_equipment  
+    			    amount = 500
+			    }
+				add_equipment_to_stockpile = {
+    			    type = light_tank_equipment  
+    			    amount = 500
+			    }
+				add_equipment_to_stockpile = {
+    			    type = heavy_tank_equipment  
+    			    amount = 500
+			    }
+		}
+	}
+	CZE_purchase_italian_trucks = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 45
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+    			type = motorized_equipment 
+    			amount = 750
+			}
+		    add_equipment_to_stockpile = {
+    			type = mechanized_equipment 
+    			amount = 750
+			}
+		    add_equipment_to_stockpile = {
+    			type = train_equipment  
+    			amount = 5
+			}
+		}
+	}
+	CZE_purchase_italian_planes = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			is_in_faction_with = ITA
+		}
+		
+		days_remove = 90
+		
+		visible = {
+			has_completed_focus = CZE_ally_italy
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+                type = fighter_equipment
+                amount = 50
+                producer = ITA
+            }
+			add_equipment_to_stockpile = {
+		        type = CAS_equipment
+		        amount = 25
+		        producer = ITA
+		    }
+		}
+	}
+}
+
+CZE_standing_alone = {
+	
+	CZE_infiltration = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 25
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_infiltrate_the_nazi_regime
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_ideas = CZE_intelligence
+		}
+	}
+	CZE_forts = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+		
+		days_remove = 20
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_infiltrate_the_nazi_regime
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	CZE_anti_air = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+		
+		days_remove = 20
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_infiltrate_the_nazi_regime
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	CZE_radars = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+		
+		days_remove = 20
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_infiltrate_the_nazi_regime
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+}
+
+CZE_field_command_for_radola_gadja = {
+	
+	CZE_radola_gadja_fm = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = Gadja_Field_Command
+		}
+	}
+}
+
+CZE_crush_slovak_nationalists = {
+	
+	# The uprising itself
+
+	CZE_slovak_uprising = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 130
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		timeout_effect = {
+		    swap_ideas = {
+				remove_idea = CZE_divided_nation
+				add_idea = CZE_slovaks_suppressed
+			}
+			if = {
+				limit = {
+					SLO = {
+						exists = no
+					}
+				}
+				release = SLO
+				SLO = {
+					set_temp_variable = { slovakia_var = this }
+				}
+			}
+			else = {
+				create_dynamic_country = {
+					original_tag = SLO
+					PREV = {
+						release = PREV
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1935.6.9"
+						election_frequency = 12
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 15
+						fascism = 75
+						communism = 10
+					}
+					add_country_leader_role = {
+						character = SLO_jozef_tiso
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+							}
+						}
+						promote_leader = yes
+					}
+					set_temp_variable = { slovakia_var = this }
+				}
+			}
+			var:slovakia_var = {
+				if = {
+					limit = {
+						owns_state = 71
+					}
+					set_capital = { state = 71 }
+				}
+				hidden_effect = {
+					every_owned_state = {
+						limit = { is_core_of = PREV }
+						add_core_of = CZE
+					}
+				}
+				CZE = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+				hidden_effect = {
+					load_oob = "SLO_independence"
+				}
+			}
+			set_global_flag = slovaks_killed
+		}
+	}
+	#the crushing
+	CZE_slovaks_crushed_mission = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 200
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			set_global_flag = slovaks_killed
+			remove_ideas = {
+				CZE_divided_nation
+			}
+		}
+	}
+}
+
+CZE_delay_slovak_uprising = {
+	
+	# Things to slow down the uprising
+	
+
+	CZE_slovak_concessions = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_slovakia_concession_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 20
+
+		modifier = {
+			
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+			NOT = { has_country_flag = CZE_slovakia_concession_flag }
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = 35
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = 45
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+			set_country_flag = CZE_slovakia_concession_flag
+		}
+	}
+	
+	CZE_positive_discrimination_slovak = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_slovak_positive_dis_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 10
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+			NOT = { has_country_flag = CZE_slovak_positive_dis_flag }
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = 35
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = 45
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+			set_country_flag = CZE_slovak_positive_dis_flag
+		}
+	}
+	
+	CZE_listening_posts_Slovakia = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_listening_post_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 20
+
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+			NOT = { has_country_flag = CZE_listening_post_flag }
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = 35
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = 45
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+			set_country_flag = CZE_listening_post_flag
+		}
+	}
+	
+	#cooldown missions
+	CZE_slovak_concessions_cooldown = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_slovakia_concession_flag
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_slovakia_concession_flag
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			clr_country_flag = CZE_slovakia_concession_flag
+		}
+	}
+	CZE_positive_discrimination_slovak_cooldown = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_slovak_positive_dis_flag
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_slovak_positive_dis_flag
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			clr_country_flag = CZE_slovak_positive_dis_flag
+		}
+	}
+	CZE_listening_posts_cooldown = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_listening_post_flag
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_listening_post_flag
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			clr_country_flag = CZE_listening_post_flag
+		}
+	}
+}
+
+CZE_progress_crushing_decisions = {
+
+# Things to actively crush the Ustasa
+	
+
+	CZE_raid_slovak_villages = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_raid_villages_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 20
+
+		modifier = {
+			neutrality_drift = -0.05
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+			NOT = { has_country_flag = CZE_raid_villages_flag }
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = -15
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = -35
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+			set_country_flag = CZE_raid_villages_flag
+		}
+	}
+
+	CZE_shut_down_recruitment_centers = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_end_recruitment_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 20
+
+		modifier = {
+			war_support_weekly = -0.01
+			stability_weekly = -0.01
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+			NOT = { has_country_flag = CZE_end_recruitment_flag }
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = -15
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = -35
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+			set_country_flag = CZE_end_recruitment_flag
+		}
+	}
+
+	CZE_arrest_slovak_leaders = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_arrest_slovaks_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+			command_power > 20
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 20
+
+		modifier = {
+			command_power_gain = -0.5
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+			NOT = { has_country_flag = CZE_arrest_slovaks_flag }
+		}
+
+		complete_effect = {
+			add_command_power = -20
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = -10
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = -45
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+			set_country_flag = CZE_arrest_slovaks_flag
+		}
+	}
+
+	CZE_slovak_recruitment = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = CZE
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = CZE_recruitment_flag
+				has_country_flag = CZE_something_in_progress_flag
+			}
+			has_army_experience > 10
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 20
+
+		modifier = {
+			experience_gain_army = -0.5
+		}
+
+		visible = {
+			tag = CZE
+			has_active_mission = CZE_slovak_uprising
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		complete_effect = {
+			set_country_flag = CZE_recruitment_flag
+			set_country_flag = CZE_something_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.05
+			}
+			division_template = {
+				name = "Slovak Militia"
+				priority = 1
+				division_names_group = SLO_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+			}
+			71 = {
+				if = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+				}
+				create_unit = {
+					division = "name = \"Slovak Militia\" division_template = \"Slovak Militia\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+			}
+			73 = {
+				if = {
+					limit = { PREV = { has_full_control_of_state = PREV } }
+				}
+				create_unit = {
+					division = "name = \"Slovak Militia\" division_template = \"Slovak Militia\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovak_uprising
+				days = -25
+			}
+			add_days_mission_timeout = {
+				mission = CZE_slovaks_crushed_mission
+				days = -40
+			}
+			clr_country_flag = CZE_something_in_progress_flag
+		}
+	}
+	
+	#cooldown missions
+	CZE_slovak_raid_cooldown = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_raid_villages_flag
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_raid_villages_flag
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			clr_country_flag = CZE_raid_villages_flag
+		}
+	}
+	CZE_shut_down_recruitment_centers_cooldown = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_end_recruitment_flag
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_end_recruitment_flag
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			clr_country_flag = CZE_end_recruitment_flag
+		}
+	}
+	CZE_arrest_slovak_leaders_cooldown = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_arrest_slovaks_flag
+		}
+
+		visible = {
+			tag = CZE
+			has_country_flag = kill_slovaks
+			has_country_flag = CZE_arrest_slovaks_flag
+			NOT = { has_global_flag = slovaks_killed }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			clr_country_flag = CZE_arrest_slovaks_flag
+		}
+	}
+}
+
+economy_decisions = {
+
+	
+}
+
+
+
+
+operations = {
+	
+	
+}
+
+
+
+war_measures = {
+	
+	
+}
+
+foreign_politics = {
+	
+}
+
+economy_decisions = {
+	
+}
+
+foreign_support = {
+
+
+}
