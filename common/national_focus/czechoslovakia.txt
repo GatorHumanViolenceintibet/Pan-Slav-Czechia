@@ -2612,10 +2612,10 @@
     			FIN = { is_in_faction = no }
     			CZE = { is_in_faction = no }
     		}
-    		FIN = {
+    		CZE = {
     			set_rule = { can_create_factions = yes }
     			create_faction = FIN_CZE_Alliance
-    			add_to_faction = CZE
+    			add_to_faction = FIN
     		}
     	}
 		}
@@ -2946,7 +2946,7 @@
             add_state_core = 351
             add_state_core = 262
             add_state_core = 236
-            add_state_core = 407
+            add_state_core = 407 
             add_state_core = 830
             add_state_core = 227
             add_state_core = 201

@@ -1137,6 +1137,11 @@ country_event = {
             } 
 			add_state_core = 329
 		}
+		TAN = {
+			every_unit_leader = {
+				set_nationality = CZE
+			}
+		}
 	}
 	
 	option = {
@@ -1675,6 +1680,8 @@ country_event = {
 		CZE = {
 		    puppet = GRE
 		}
+		transfer_state = 731
+		transfer_state = 184
 	}
 }
 

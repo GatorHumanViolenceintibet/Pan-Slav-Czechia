@@ -1,0 +1,55 @@
+﻿division_template = {
+   name = "Militia"
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+    }
+    support = {
+        recon = { x = 0 y = 0 }
+    }
+}
+units = {
+	division = {
+        name = "Don Cossack Militia"
+        location = 9417
+        division_template = "Militia"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.56
+        start_manpower_factor = 0.8
+    }
+	division = {
+        name = "Don Cossack Militia"
+        location = 11706
+        division_template = "Militia"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.56
+        start_manpower_factor = 0.8
+    }
+	division = {
+        name = "Don Cossack Militia"
+        location = 11724
+        division_template = "Militia"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.56
+        start_manpower_factor = 0.8
+    }
+	division = {
+        name = "Don Cossack Militia"
+        location = 11724
+        division_template = "Militia"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.56
+        start_manpower_factor = 0.8
+    }
+	division = {
+        name = "Don Cossack Militia"
+        location = 775
+        division_template = "Militia"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.56
+        start_manpower_factor = 0.8
+    }
+}

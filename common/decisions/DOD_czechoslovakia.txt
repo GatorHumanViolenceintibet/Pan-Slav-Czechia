@@ -1879,14 +1879,15 @@ CZE_supporting_nationalists = {
 			original_tag = CZE
 		}
 		available = {
+		    country_exists = SOV
 		}
 				
-		fire_only_once = yes
+		days_remove = 120
 		
 		visible = {
-			has_completed_focus = CZE_stage_the_coup
+			has_country_flag = align_nationalists
 		}
-		cost = 25
+		cost = 50
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1896,8 +1897,48 @@ CZE_supporting_nationalists = {
 				factor = 0
 			}
 		}
-		complete_effect = {
-			set_country_flag = Gadja_Field_Command
+		remove_effect = {
+			set_country_flag = arming_ukrainians
+		}
+	}
+	CZE_arm_ukrainian_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_ukrainians
+				has_equipment = {
+                    infantry_equipment_1 > 2000
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_ukrainians
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -2000
+                producer = CZE
+            }
 		}
 	}
 	CZE_supporting_belarusian_nationalists = {
@@ -1905,14 +1946,16 @@ CZE_supporting_nationalists = {
 			original_tag = CZE
 		}
 		available = {
+		    country_exists = SOV
 		}
 				
-		fire_only_once = yes
+		days_remove = 120
+		
 		
 		visible = {
-			has_completed_focus = CZE_stage_the_coup
+			has_country_flag = align_nationalists
 		}
-		cost = 25
+		cost = 50
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1922,8 +1965,48 @@ CZE_supporting_nationalists = {
 				factor = 0
 			}
 		}
-		complete_effect = {
-			set_country_flag = Gadja_Field_Command
+		remove_effect = {
+			set_country_flag = arming_belarusians
+		}
+	}
+	CZE_arm_belarusian_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_belarusians
+				has_equipment = {
+                    infantry_equipment_1 > 1000
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_belarusians
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -1000
+                producer = CZE
+            }
 		}
 	}
 	CZE_supporting_karelian_nationalists = {
@@ -1931,14 +2014,15 @@ CZE_supporting_nationalists = {
 			original_tag = CZE
 		}
 		available = {
+		    country_exists = SOV
 		}
 				
-		fire_only_once = yes
+		days_remove = 120
 		
 		visible = {
-			has_completed_focus = CZE_stage_the_coup
+			has_country_flag = align_nationalists
 		}
-		cost = 25
+		cost = 50
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1948,8 +2032,48 @@ CZE_supporting_nationalists = {
 				factor = 0
 			}
 		}
-		complete_effect = {
-			set_country_flag = Gadja_Field_Command
+		remove_effect = {
+			set_country_flag = arming_karelians
+		}
+	}
+	CZE_arm_karelian_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_karelians
+				has_equipment = {
+                    infantry_equipment_1 > 1000
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_karelians
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -1000
+                producer = CZE
+            }
 		}
 	}
 	CZE_stir_discontent_in_the_caucuses = {
@@ -1957,14 +2081,15 @@ CZE_supporting_nationalists = {
 			original_tag = CZE
 		}
 		available = {
+		    country_exists = SOV
 		}
 				
-		fire_only_once = yes
+		days_remove = 120
 		
 		visible = {
-			has_completed_focus = CZE_stage_the_coup
+			has_country_flag = align_nationalists
 		}
-		cost = 25
+		cost = 50
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1974,8 +2099,48 @@ CZE_supporting_nationalists = {
 				factor = 0
 			}
 		}
-		complete_effect = {
-			set_country_flag = Gadja_Field_Command
+		remove_effect = {
+			set_country_flag = arming_caucasians
+		}
+	}
+	CZE_arm_nationalists_in_the_caucuses = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_caucasians
+				has_equipment = {
+                    infantry_equipment_1 > 3500
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_caucuses
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -3500
+                producer = CZE
+            }
 		}
 	}
 	CZE_stir_discontent_in_central_asia = {
@@ -1983,12 +2148,698 @@ CZE_supporting_nationalists = {
 			original_tag = CZE
 		}
 		available = {
+		    country_exists = SOV
+		}
+				
+		days_remove = 120
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = arming_central_asians
+		}
+	}
+	CZE_arm_nationalists_in_central_asia = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_central_asians
+				has_equipment = {
+                    infantry_equipment_1 > 3500
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_central_asia
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -3500
+                producer = CZE
+            }
+		}
+	}
+	CZE_stir_discontent_in_tartar_regions = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    country_exists = SOV
+		}
+				
+		days_remove = 120
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = arming_tartars
+		}
+	}
+	CZE_arm_tartar_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_tartars
+				has_equipment = {
+                    infantry_equipment_1 > 1000
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_tartars
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -1000
+                producer = CZE
+            }
+		}
+	}
+	CZE_stir_discontent_in_cossack_regions = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    country_exists = SOV
+		}
+				
+		days_remove = 120
+				
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = arming_cossacks
+		}
+	}
+	CZE_arm_cossack_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        country_exists = SOV
+				has_country_flag = arming_cossacks
+				has_equipment = {
+                    infantry_equipment_1 > 1000
+                }
+			}
+		}
+				
+		days_remove = 120
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			set_country_flag = nationalists_ready_cossacks
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -1000
+                producer = CZE
+            }
+		}
+	}
+	CZE_incite_uprisings = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+			    country_exists = SOV
+			    has_country_flag = nationalists_ready_cossacks
+				has_country_flag = nationalists_ready_caucuses
+				has_country_flag = nationalists_ready_central_asia
+				has_country_flag = nationalists_ready_tartars
+				has_country_flag = nationalists_ready_ukrainians
+				has_country_flag = nationalists_ready_belarusians
+				has_country_flag = nationalists_ready_karelians
+			}
 		}
 				
 		fire_only_once = yes
 		
+		days_remove = 70
+		
 		visible = {
-			has_completed_focus = CZE_stage_the_coup
+			has_country_flag = align_nationalists
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    UKR = {
+			    transfer_state = 199
+                transfer_state = 201
+				transfer_state = 202
+                transfer_state = 198
+				transfer_state = 203
+                transfer_state = 197
+				transfer_state = 192
+                transfer_state = 834
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 2000
+                    producer = CZE
+                }
+				load_oob = "ukr_uprising"
+			}
+			BLR = {
+			    transfer_state = 207
+                transfer_state = 206
+				transfer_state = 204
+                transfer_state = 194
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "blr_uprising"
+			}
+			CRI = {
+			    transfer_state = 137
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "cri_uprising"
+			}
+			DON = {
+			    transfer_state = 218
+                transfer_state = 238
+				transfer_state = 237
+                transfer_state = 235
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "don_uprising"
+			}
+			KUB = {
+			    transfer_state = 234
+                transfer_state = 233
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "kub_uprising"
+			}
+			KAR = {
+			    transfer_state = 215
+                transfer_state = 216
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "kar_uprising"
+			}
+			TAT = {
+			    transfer_state = 249
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "tat_uprising"
+			}
+			BSK = {
+			    transfer_state = 651
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = CZE
+                }
+				load_oob = "bsk_uprising"
+			}
+			DAG = {
+			    transfer_state = 232
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "dag_uprising"
+			}
+			CIN = {
+			    transfer_state = 821
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "cin_uprising"
+			}
+			NOA = {
+			    transfer_state = 828
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "noa_uprising"
+			}
+			KBK = {
+			    transfer_state = 827
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "kbk_uprising"
+			}
+			ABK = {
+			    transfer_state = 826
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "abk_uprising"
+			}
+			GEO = {
+			    transfer_state = 231
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "geo_uprising"
+			}
+			ARM = {
+			    transfer_state = 230
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "arm_uprising"
+			}
+			AZR = {
+			    transfer_state = 229
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "azr_uprising"
+			}
+			KAZ = {
+			    transfer_state = 587
+				transfer_state = 402
+				transfer_state = 881
+				transfer_state = 589
+				transfer_state = 586
+				transfer_state = 404
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "kaz_uprising"
+			}
+			KKP = {
+			    transfer_state = 823
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "kkp_uprising"
+			}
+			KHI = {
+			    transfer_state = 832
+				transfer_state = 831
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "khi_uprising"
+			}
+			TMS = {
+			    transfer_state = 584
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "tms_uprising"
+			}
+			BUK = {
+			    transfer_state = 742
+				transfer_state = 830
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "buk_uprising"
+			}
+			UZB = {
+			    transfer_state = 405
+				transfer_state = 585
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "uzb_uprising"
+			}
+			KYR = {
+			    transfer_state = 732
+				add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 500
+                    producer = CZE
+                }
+				load_oob = "kyr_uprising"
+			}
+			SOV = {
+		        declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = BLR
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = CRI
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = DON
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KUB
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KAR
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = TAT
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = BSK
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = DAG
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = CIN
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = NOA
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KBK
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = ABK
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = GEO
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = ARM
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = AZR
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KAZ
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KKP
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KHI
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = TMS
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = BUK
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = UZB
+                    type = annex_everything
+                }
+				declare_war_on = {
+                    target = KYR
+                    type = annex_everything
+                }
+		    }
+			CZE = {
+		        declare_war_on = {
+                    target = SOV
+                    type = annex_everything
+                }
+				puppet = UKR
+				puppet = BLR
+				puppet = CRI
+				puppet = DON
+				puppet = KUB
+				puppet = KAR
+				puppet = TAT
+				puppet = BSK
+				puppet = DAG
+				puppet = CIN
+				puppet = NOA
+				puppet = KBK
+				puppet = ABK
+				puppet = GEO
+				puppet = ARM
+				puppet = AZR
+				puppet = KAZ
+				puppet = KKP
+				puppet = KHI
+				puppet = TMS
+				puppet = BUK
+				puppet = UZB
+				puppet = KYR
+				set_country_flag = CZE_begin_integration
+		    }
+			if = {
+    		    limit = {
+    			    CZE = { is_faction_leader = yes }
+    		    }
+    		    CZE = {
+    			    add_to_faction = UKR
+					add_to_faction = BLR
+				    add_to_faction = CRI
+				    add_to_faction = DON
+				    add_to_faction = KUB
+				    add_to_faction = KAR
+				    add_to_faction = TAT
+				    add_to_faction = BSK
+				    add_to_faction = DAG
+				    add_to_faction = CIN
+				    add_to_faction = NOA
+				    add_to_faction = KBK
+				    add_to_faction = ABK
+				    add_to_faction = GEO
+				    add_to_faction = ARM
+				    add_to_faction = AZR
+				    add_to_faction = KAZ
+				    add_to_faction = KKP
+				    add_to_faction = KHI
+				    add_to_faction = TMS
+				    add_to_faction = BUK
+				    add_to_faction = UZB
+				    add_to_faction = KYR
+    		    }
+    	    }
+    	    if = {
+    		    limit = {
+				    CZE = { is_in_faction = no }
+    			    UKR = { is_in_faction = no }
+					BLR = { is_in_faction = no }
+					CRI = { is_in_faction = no }
+					DON = { is_in_faction = no }
+					KUB = { is_in_faction = no }
+					KAR = { is_in_faction = no }
+					TAT = { is_in_faction = no }
+    			    BSK = { is_in_faction = no }
+					DAG = { is_in_faction = no }
+					CIN = { is_in_faction = no }
+					NOA = { is_in_faction = no }
+					KBK = { is_in_faction = no }
+					ABK = { is_in_faction = no }
+					GEO = { is_in_faction = no }
+					ARM = { is_in_faction = no }
+    			    AZR = { is_in_faction = no }
+					KAZ = { is_in_faction = no }
+					KKP = { is_in_faction = no }
+					KHI = { is_in_faction = no }
+					TMS = { is_in_faction = no }
+					BUK = { is_in_faction = no }
+					UZB = { is_in_faction = no }
+					KYR = { is_in_faction = no }
+    		    }
+    		    CZE = {
+    			    set_rule = { can_create_factions = yes }
+    			    create_faction = CZE_Sphere
+    			    add_to_faction = UKR
+					add_to_faction = BLR
+				    add_to_faction = CRI
+				    add_to_faction = DON
+				    add_to_faction = KUB
+				    add_to_faction = KAR
+				    add_to_faction = TAT
+				    add_to_faction = BSK
+				    add_to_faction = DAG
+				    add_to_faction = CIN
+				    add_to_faction = NOA
+				    add_to_faction = KBK
+				    add_to_faction = ABK
+				    add_to_faction = GEO
+				    add_to_faction = ARM
+				    add_to_faction = AZR
+				    add_to_faction = KAZ
+				    add_to_faction = KKP
+				    add_to_faction = KHI
+				    add_to_faction = TMS
+				    add_to_faction = BUK
+				    add_to_faction = UZB
+				    add_to_faction = KYR
+    		    }
+    	    }
+		}
+	}
+}
+
+CZE_integrate_puppets = {
+	
+	CZE_integrate_UKR = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    UKR = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
 		}
 		cost = 25
 		ai_will_do = {
@@ -2000,25 +2851,1002 @@ CZE_supporting_nationalists = {
 				factor = 0
 			}
 		}
-		complete_effect = {
-			set_country_flag = Gadja_Field_Command
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = UKR
+                    transfer_troops = yes
+                } 
+		    }
+			UKR = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 834
+			add_state_core = 227
+			add_state_core = 201
+			add_state_core = 197
+			add_state_core = 225
+			add_state_core = 203
+			add_state_core = 200
+			add_state_core = 192
+			add_state_core = 259
+			add_state_core = 202
+			add_state_core = 196
+			add_state_core = 226
+			add_state_core = 199
+			add_state_core = 228
+			add_state_core = 221
+			add_state_core = 198
+			add_state_core = 193
+		}
+	}
+	CZE_integrate_blr = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    BLR = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = BLR
+                    transfer_troops = yes
+                } 
+		    }
+			BLR = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 207
+			add_state_core = 194
+			add_state_core = 204
+			add_state_core = 241
+			add_state_core = 206
+		}
+	}
+	CZE_integrate_CRI = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    CRI = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = CRI
+                    transfer_troops = yes
+                } 
+		    }
+			CRI = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 137
+		}
+	}
+	CZE_integrate_DON = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    DON = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = DON
+                    transfer_troops = yes
+                } 
+		    }
+			DON = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 237
+			add_state_core = 235
+		}
+	}
+	CZE_integrate_KUB = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KUB = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KUB
+                    transfer_troops = yes
+                } 
+		    }
+			KUB = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 234
+			add_state_core = 233
+		}
+	}
+	CZE_integrate_KAR = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KAR = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KAR
+                    transfer_troops = yes
+                } 
+		    }
+			KAR = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 215
+			add_state_core = 216
+		}
+	}
+	CZE_integrate_TAT = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    TAT = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = TAT
+                    transfer_troops = yes
+                } 
+		    }
+			TAT = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 249
+		}
+	}
+	CZE_integrate_BSK = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    BSK = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = BSK
+                    transfer_troops = yes
+                } 
+		    }
+			BSK = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 651
+		}
+	}
+	CZE_integrate_DAG = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    DAG = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = DAG
+                    transfer_troops = yes
+                } 
+		    }
+			DAG = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 232
+		}
+	}
+	CZE_integrate_CIN = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    CIN = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = CIN
+                    transfer_troops = yes
+                } 
+		    }
+			CIN = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 821
+		}
+	}
+	CZE_integrate_NOA = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    NOA = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = NOA
+                    transfer_troops = yes
+                } 
+		    }
+			NOA = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 828
+		}
+	}
+	CZE_integrate_KBK = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KBK = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KBK
+                    transfer_troops = yes
+                } 
+		    }
+			KBK = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 827
+		}
+	}
+	CZE_integrate_ABK = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    ABK = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = ABK
+                    transfer_troops = yes
+                } 
+		    }
+			ABK = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 826
+		}
+	}
+	CZE_integrate_GEO = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    GEO = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = GEO
+                    transfer_troops = yes
+                } 
+		    }
+			GEO = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 231
+		}
+	}
+	CZE_integrate_ARM = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    ARM = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = ARM
+                    transfer_troops = yes
+                } 
+		    }
+			ARM = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 230
+		}
+	}
+	CZE_integrate_AZR = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AZR = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = AZR
+                    transfer_troops = yes
+                } 
+		    }
+			AZR = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 229
+		}
+	}
+	CZE_integrate_KAZ = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KAZ = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KAZ
+                    transfer_troops = yes
+                } 
+		    }
+			KAZ = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 587
+			add_state_core = 590
+			add_state_core = 589
+			add_state_core = 407
+			add_state_core = 882
+			add_state_core = 402
+			add_state_core = 406
+			add_state_core = 586
+			add_state_core = 583
+			add_state_core = 881
+			add_state_core = 588
+			add_state_core = 404
+		}
+	}
+	CZE_integrate_KKP = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KKP = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KKP
+                    transfer_troops = yes
+                } 
+		    }
+			KKP = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 823
+		}
+	}
+	CZE_integrate_KHI = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KHI = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KHI
+                    transfer_troops = yes
+                } 
+		    }
+			KHI = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 831
+			add_state_core = 832
+		}
+	}
+	CZE_integrate_TMS = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    TMS = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = TMS
+                    transfer_troops = yes
+                } 
+		    }
+			TMS = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 584
+		}
+	}
+	CZE_integrate_BUK = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    BUK = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = BUK
+                    transfer_troops = yes
+                } 
+		    }
+			BUK = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 830
+			add_state_core = 742
+		}
+	}
+	CZE_integrate_UZB = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    UZB = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = UZB
+                    transfer_troops = yes
+                } 
+		    }
+			UZB = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 405
+			add_state_core = 585
+		}
+	}
+	CZE_integrate_KYR = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    KYR = {
+			    is_puppet_of = CZE
+			}
+		}
+				
+		days_remove = 180
+		
+		fire_only_once = yes
+				
+		visible = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+		    CZE = {
+		        annex_country = {
+                    target = KYR
+                    transfer_troops = yes
+                } 
+		    }
+			KYR = {
+			    every_unit_leader = {
+				    set_nationality = CZE
+			    }
+		    }
+			add_state_core = 732
 		}
 	}
 }
 
 CZE_the_russian_exiles = {
 	
-	CZE_ = {
+	CZE_request_white_emigre_donations = {
 		allowed = {
 			original_tag = CZE
 		}
 		available = {
+		    has_war_with = SOV
 		}
 				
-		fire_only_once = yes
+		days_remove = 180
+		
+		days_re_enable = 70
 		
 		visible = {
-			has_completed_focus = CZE_stage_the_coup
+			has_country_flag = russian_exiles
 		}
 		cost = 25
 		ai_will_do = {
@@ -2031,6 +3859,127 @@ CZE_the_russian_exiles = {
 			}
 		}
 		complete_effect = {
+		    add_ideas = CZE_white_russian_donations
+		}
+		remove_effect = {
+		    remove_ideas = CZE_white_russian_donations
+		}
+	}
+	CZE_spread_tsarist_propaganda = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        has_war_with = SOV
+				SOV = {
+				    any_owned_state = {  is_controlled_by = CZE }	
+				}
+			}
+		}
+				
+		days_remove = 100
+		
+		days_re_enable = 70
+		
+		visible = {
+			has_country_flag = russian_exiles
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			add_timed_idea = {
+                idea = CZE_tsarist_propaganda
+                days = 90
+            }
+		}
+	}
+	CZE_recruit_soviet_pows = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+		        has_war_with = SOV
+				has_equipment = {
+                    infantry_equipment_1 > 12450
+                }
+				has_manpower > 24500
+		    }
+		}
+				
+		days_remove = 180
+		
+		days_re_enable = 90
+		
+		visible = {
+			has_country_flag = russian_exiles
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -12450
+                producer = CZE
+            }
+			add_manpower = -24500
+		}
+		remove_effect = {
+			division_template = {
+                name = "Russian Defectors"
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                }
+                support = { 
+                    recon = { x = 0 y = 0 }
+                } 
+            }
+            9 = {
+                create_unit = {
+                    division = "name = \"White Russian Brigade\" division_template = \"Russian Defectors\" start_experience_factor = 0.45 start_equipment_factor = 1.0" 
+                    owner = CZE
+                }
+            }
+			9 = {
+                create_unit = {
+                    division = "name = \"White Russian Brigade\" division_template = \"Russian Defectors\" start_experience_factor = 0.45 start_equipment_factor = 1.0" 
+                    owner = CZE
+                }
+            }
+			9 = {
+                create_unit = {
+                    division = "name = \"White Russian Brigade\" division_template = \"Russian Defectors\" start_experience_factor = 0.45 start_equipment_factor = 1.0" 
+                    owner = CZE
+                }
+            }
+			9 = {
+                create_unit = {
+                    division = "name = \"White Russian Brigade\" division_template = \"Russian Defectors\" start_experience_factor = 0.45 start_equipment_factor = 1.0" 
+                    owner = CZE
+                }
+            }
 		}
 	}
 }

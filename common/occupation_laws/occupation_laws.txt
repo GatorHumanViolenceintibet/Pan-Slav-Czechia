@@ -660,8 +660,11 @@ pan_slavic_liberation = {
 	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
 
 	visible = {
-		original_tag = CZE
-		FROM = { original_tag = SOV }
+	    AND = {
+		    original_tag = CZE
+		    FROM = { original_tag = SOV }
+		    has_country_flag = russian_exiles
+		}
 	}
 
 	state_modifier = {

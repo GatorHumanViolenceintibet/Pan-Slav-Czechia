@@ -829,6 +829,46 @@ ideas = {
 				local_building_slots_factor = -0.05
 			}
 		}
+		
+		CZE_white_russian_donations = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+		
+		CZE_tsarist_propaganda = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1250
+				local_non_core_manpower = 0.12
+				attrition = -0.15
+			}
+		}
 
 	}
 

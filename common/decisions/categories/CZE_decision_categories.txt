@@ -184,3 +184,18 @@ CZE_the_russian_exiles = {
 	}
 }
 
+CZE_integrate_puppets = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_country_flag = CZE_begin_integration
+	}
+}
+

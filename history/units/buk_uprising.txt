@@ -1,0 +1,37 @@
+﻿division_template = {
+   name = "Militia"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+units = {
+	division = {
+        name = "Bukharan Militia"
+        location = 1573
+        division_template = "Militia"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.55
+        start_manpower_factor = 0.8
+    }
+	division = {
+        name = "Bukharan Militia"
+        location = 1573
+        division_template = "Militia"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.55
+        start_manpower_factor = 0.8
+    }
+	division = {
+        name = "Bukharan Militia"
+        location = 1573
+        division_template = "Militia"
+        start_experience_factor = 0.5
+        start_equipment_factor = 0.55
+        start_manpower_factor = 0.8
+    }
+}
