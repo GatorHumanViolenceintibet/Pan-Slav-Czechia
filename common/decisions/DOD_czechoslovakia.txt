@@ -142,8 +142,6 @@ CZE_the_powderkeg = {
 		}
 		remove_effect = {
 			ALB = { country_event = { hours = 1 id = czech.68 } }
-			add_state_core = 805
-			add_state_core = 44
 		}
 	}
 }
@@ -179,7 +177,7 @@ CZE_slavic_alignment1 = {
 			POL = { country_event = { hours = 1 id = czech.69 } }
 		}
 	}
-	CZE_Romania = {
+	CZE_invite_Romania_to_carve_hungary = {
 		allowed = {
 			original_tag = CZE
 		}
@@ -207,39 +205,6 @@ CZE_slavic_alignment1 = {
 		}
 		remove_effect = {
 			ROM = { country_event = { hours = 1 id = czech.70 } }
-		}
-	}
-	CZE_dismember_hungary = {
-		allowed = {
-			original_tag = CZE
-		}
-		available = {
-			
-		}
-		
-		days_remove = 14
-		
-		fire_only_once = yes
-		
-		visible = {
-			has_completed_focus = CZE_slavic_unity
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				CZE = {
-					is_ai = no
-				}
-				factor = 0
-			}
-		}
-		remove_effect = {
-			create_wargoal = {
-				type = annex_everything
-				target = HUN
-				expire = 0
-			}
 		}
 	}
 	CZE_form_west_slav_union = {
@@ -317,20 +282,6 @@ CZE_slavic_alignment1 = {
 			add_state_core = 96
 			add_state_core = 85
 			add_state_core = 10
-			add_state_core = 84
-			add_state_core = 82
-			add_state_core = 80
-			add_state_core = 76
-			add_state_core = 77
-			add_state_core = 766
-			add_state_core = 79
-			add_state_core = 78
-			add_state_core = 83
-			add_state_core = 81
-			add_state_core = 46
-			add_state_core = 43
-			add_state_core = 155
-			add_state_core = 154
 		}
 	}
 }
@@ -377,6 +328,8 @@ CZE_italian_slav_alliance = {
 			is_in_faction_with = ITA
 		}
 		
+		days_re_enable = 70
+		
 		days_remove = 45
 		
 		visible = {
@@ -413,6 +366,8 @@ CZE_italian_slav_alliance = {
 			is_in_faction_with = ITA
 		}
 		
+		days_re_enable = 70
+		
 		days_remove = 45
 		
 		visible = {
@@ -443,6 +398,8 @@ CZE_italian_slav_alliance = {
 		available = {
 			is_in_faction_with = ITA
 		}
+		
+		days_re_enable = 70
 		
 		days_remove = 45
 		
@@ -483,6 +440,8 @@ CZE_italian_slav_alliance = {
 			is_in_faction_with = ITA
 		}
 		
+		days_re_enable = 70
+		
 		days_remove = 45
 		
 		visible = {
@@ -521,6 +480,8 @@ CZE_italian_slav_alliance = {
 			is_in_faction_with = ITA
 		}
 		
+		days_re_enable = 70
+		
 		days_remove = 45
 		
 		visible = {
@@ -558,6 +519,8 @@ CZE_italian_slav_alliance = {
 		available = {
 			is_in_faction_with = ITA
 		}
+		
+		days_re_enable = 70
 		
 		days_remove = 90
 		
@@ -626,9 +589,10 @@ CZE_standing_alone = {
 		available = {
 		}
 		
-		days_remove = 20
+		days_remove = 35
 		
-		fire_only_once = yes
+		days_re_enable = 180
+		
 		
 		visible = {
 			has_completed_focus = CZE_infiltrate_the_nazi_regime
@@ -644,7 +608,10 @@ CZE_standing_alone = {
 			}
 		}
 		remove_effect = {
-			
+			add_timed_idea = {
+                idea = CZE_fort_bonus
+                days = 90
+            }
 		}
 	}
 	CZE_anti_air = {
@@ -656,8 +623,8 @@ CZE_standing_alone = {
 		
 		days_remove = 20
 		
-		fire_only_once = yes
-		
+		days_re_enable = 40
+				
 		visible = {
 			has_completed_focus = CZE_infiltrate_the_nazi_regime
 		}
@@ -672,7 +639,103 @@ CZE_standing_alone = {
 			}
 		}
 		remove_effect = {
-			
+			random_owned_state = {
+			    add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			random_owned_state = {
+			    add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			random_owned_state = {
+			    add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 1
+                    instant_build = yes
+                }
+			}
+		}
+	}
+	CZE_munitions_factories = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    
+		}
+		
+		days_remove = 40
+		
+		days_re_enable = 70
+				
+		visible = {
+			has_completed_focus = CZE_infiltrate_the_nazi_regime
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			random_owned_state = {
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+			}
 		}
 	}
 	CZE_radars = {
@@ -684,8 +747,8 @@ CZE_standing_alone = {
 		
 		days_remove = 20
 		
-		fire_only_once = yes
-		
+		days_re_enable = 40
+				
 		visible = {
 			has_completed_focus = CZE_infiltrate_the_nazi_regime
 		}
@@ -700,7 +763,57 @@ CZE_standing_alone = {
 			}
 		}
 		remove_effect = {
-			
+			random_owned_state = {
+			    add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			random_owned_state = {
+			    add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			random_owned_state = {
+			    add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+			}
 		}
 	}
 }
@@ -1594,7 +1707,9 @@ CZE_fascist_marches = {
 		available = {
 		}
 				
-		days_remove = 90
+		days_remove = 30
+		
+		days_re_enable = 50
 				
 		visible = {
 			has_completed_focus = CZE_rally_czech_nationalists
@@ -1602,7 +1717,7 @@ CZE_fascist_marches = {
 			    has_government = fascism
 			}
 		}
-		cost = 20
+		cost = 35
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1626,7 +1741,9 @@ CZE_fascist_marches = {
 		available = {
 		}
 				
-		days_remove = 70
+		days_remove = 30
+		
+		days_re_enable = 50
 				
 		visible = {
 			has_completed_focus = CZE_rally_czech_nationalists
@@ -1634,7 +1751,7 @@ CZE_fascist_marches = {
 			    has_government = fascism
 			}
 		}
-		cost = 20
+		cost = 35
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1658,7 +1775,9 @@ CZE_fascist_marches = {
 		available = {
 		}
 				
-		days_remove = 21
+		days_remove = 30
+		
+		days_re_enable = 50
 				
 		visible = {
 			has_completed_focus = CZE_rally_czech_nationalists
@@ -1666,7 +1785,7 @@ CZE_fascist_marches = {
 			    has_government = fascism
 			}
 		}
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1690,7 +1809,9 @@ CZE_fascist_marches = {
 		available = {
 		}
 				
-		days_remove = 21
+		days_remove = 30
+		
+		days_re_enable = 50
 				
 		visible = {
 			has_completed_focus = CZE_rally_czech_nationalists
@@ -1698,7 +1819,7 @@ CZE_fascist_marches = {
 			    has_government = fascism
 			}
 		}
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1722,7 +1843,9 @@ CZE_fascist_marches = {
 		available = {
 		}
 				
-		days_remove = 35
+		days_remove = 30
+		
+		days_re_enable = 50
 				
 		visible = {
 			has_completed_focus = CZE_rally_czech_nationalists
@@ -1730,7 +1853,7 @@ CZE_fascist_marches = {
 			    has_government = fascism
 			}
 		}
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1745,6 +1868,169 @@ CZE_fascist_marches = {
                 ideology = fascism
                 popularity = 0.04
             }
+		}
+	}
+}
+
+CZE_supporting_nationalists = {
+	
+	CZE_support_ukrainian_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = Gadja_Field_Command
+		}
+	}
+	CZE_supporting_belarusian_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = Gadja_Field_Command
+		}
+	}
+	CZE_supporting_karelian_nationalists = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = Gadja_Field_Command
+		}
+	}
+	CZE_stir_discontent_in_the_caucuses = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = Gadja_Field_Command
+		}
+	}
+	CZE_stir_discontent_in_central_asia = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			set_country_flag = Gadja_Field_Command
+		}
+	}
+}
+
+CZE_the_russian_exiles = {
+	
+	CZE_ = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = CZE_stage_the_coup
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
 		}
 	}
 }

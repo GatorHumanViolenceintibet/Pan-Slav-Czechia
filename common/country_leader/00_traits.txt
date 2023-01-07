@@ -28,11 +28,12 @@ leader_traits = {
 	the_siberian_tiger = {
 		random = no
 		army_chief_cost_factor = -0.25
+		high_command_cost_factor = -0.25
 		war_support_factor = 0.15
 		command_power_gain = 0.1
 		acclimatization_cold_climate_gain_factor = 0.5
-		winter_attrition_factor = -0.55
-		army_attack_against_major_factor = 0.2
+		winter_attrition_factor = -0.25
+		army_attack_against_major_factor = 0.1
 		army_attack_factor = 0.1
 		planning_speed = 0.15
 

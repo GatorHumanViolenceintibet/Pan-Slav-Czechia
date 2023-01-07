@@ -582,13 +582,35 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				justify_war_goal_time = -0.35
+				recruitable_population_factor = 0.05
+			}
+		}
+		
+		CZE_pan_slavic_nationalism2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = generic_fascist_workers
+
+			removal_cost = -1
+
+			modifier = {
 				army_morale_factor = 0.15
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25
-				resistance_target_on_our_occupied_states = 0.15
-				justify_war_goal_time = -0.35
+				justify_war_goal_time = -0.5
 				war_support_weekly_factor = 0.02
-				recruitable_population_factor = 0.05
+				recruitable_population_factor = 0.15
 			}
 		}
 		
@@ -721,6 +743,90 @@ ideas = {
 				max_dig_in_factor = 0.3
 				dig_in_speed_factor = 0.1
 				conscription = 0.005
+			}
+		}
+		
+		CZE_fort_bonus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.75
+				conscription = 0.010
+			}
+		}
+		
+		CZE_legionary_veteran_training_centers_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army_unit_factor = 0.1
+                experience_loss_factor = -0.05
+			}
+		}
+		
+		CZE_legionary_youth = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.035
+				training_time_factor = -0.1
+				minimum_training_level = -0.05
+                max_training = 0.05
+			}
+		}
+		
+		CZE_agricultural_autarky = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				out_of_supply_factor = -0.15
+				attrition = -0.06
+				consumer_goods_factor = -0.07
+				local_building_slots_factor = -0.05
 			}
 		}
 

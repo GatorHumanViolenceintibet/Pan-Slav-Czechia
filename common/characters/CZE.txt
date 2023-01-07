@@ -121,10 +121,10 @@ characters={
 				small=GFX_portrait_CZE_vojtyech_luzha_small
 			}
 		}
-		corps_commander={
-			traits={ fast_planner infantry_officer }
-			skill=2
-			attack_skill=3
+		field_marshal={
+			traits={ offensive_doctrine fast_planner infantry_officer }
+			skill=3
+			attack_skill=4
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=1
@@ -140,8 +140,8 @@ characters={
 				small=GFX_portrait_CZE_josef_shnejdarek_small
 			}
 		}
-		corps_commander={
-			traits={ thorough_planner organizer }
+		field_marshal={
+			traits={ defensive_doctrine thorough_planner organizer }
 			skill=3
 			attack_skill=3
 			defense_skill=4
@@ -189,158 +189,6 @@ characters={
 		}
 	}
 	
-	CZE_josef_balaban={
-		name="Josef Balabán"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/josef_balaban.dds"
-				#small=GFX_portrait_CZE_josef_balaban_small
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_josef_bily={
-		name="Josef Bílý"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/josef_bily.dds"
-				#small=GFX_portrait_CZE_josef_bily_small
-			}
-		}
-		corps_commander={
-			traits={career_officer old_guard }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_jaroslav_cihak={
-		name="Jaroslav Čihák"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/jaroslav_cihak.dds"
-				#small=GFX_portrait_CZE_jaroslav_cihak_small
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_alois_elias={
-		name="Alois Eliáš"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/alois_elias.dds"
-				#small=GFX_portrait_CZE_alois_elias_small
-			}
-		}
-		corps_commander={
-			traits={ career_officer infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	
-	CZE_bedrich_homola={
-		name="Bedřich Homola"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/bedrich_homola.dds"
-				#small=GFX_portrait_CZE_bedrich_homola_small
-			}
-		}
-		corps_commander={
-			traits={ harsh_leader infantry_expert }
-			skill=3
-			attack_skill=2
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_sergej_ingr={
-		name="Sergěj Ingr"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/sergej_ingr.dds"
-				#small=GFX_portrait_CZE_sergej_ingr_small
-			}
-		}
-		corps_commander={
-			traits={ inflexible_strategist thorough_planner }
-			skill=3
-			attack_skill=1
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	
-	CZE_karel_klapalek={
-		name="Karel Klapálek"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/karel_klapalek.dds"
-				#small=GFX_portrait_CZE_karel_klapalek_small
-			}
-		}
-		corps_commander={
-			traits={ career_officer winter_specialist }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_lev_prchala={
-		name="Lev Prchala"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/lev_prchala.dds"
-				#small=GFX_portrait_CZE_lev_prchala_small
-			}
-		}
-		corps_commander={
-			traits={}
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
 	CZE_jan_syrovy={
 		name="Jan Syrový"
 		portraits={
@@ -356,82 +204,6 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-	
-	CZE_josef_zmek={
-		name="Josef Zmek"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/josef_zmek.dds"
-				#small=GFX_portrait_CZE_josef_zmek_small
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=1
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_josef_votruba={
-		name="Josef Votruba"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/josef_votruba.dds"
-				#small=GFX_portrait_CZE_josef_votruba_small
-			}
-		}
-		corps_commander={
-			traits={ career_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	
-	CZE_bedrich_neumann={
-		name="Bedrich Neumann"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/bedrich_neumann.dds"
-				#small=GFX_portrait_CZE_bedrich_neumann_small
-			}
-		}
-		corps_commander={
-			traits={career_officer }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-	
-	CZE_bohumil_bocek={
-		name="Bohumil Boček"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/bohumil_bocek.dds"
-				#small=GFX_portrait_CZE_bohumil_bocek_small
-			}
-		}
-		corps_commander={
-			traits={ career_officer infantry_officer }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
 			legacy_id=-1
 		}
 	}

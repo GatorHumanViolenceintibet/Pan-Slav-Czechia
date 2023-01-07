@@ -1521,9 +1521,9 @@
  ITA_italian_empire_communism:0 "Grand Italian Union"
  ITA_italian_empire_communism_DEF:0 "the Grand Italian Union"
  
- CZE_NOF:0 "Czech Empire"
- CZE_NOF_DEF:0 "the Czech Empire"
- CZE_west_slav_union:0 "West Slav Union"
- CZE_west_slav_union_desc:0 "the West Slav Union"
+ CZE_NOF:0 "Unified National Czechoslovakia"
+ CZE_NOF_DEF:0 "Unified National Czechoslovakia"
+ CZE_west_slav_union:0 "Zapadoslavia"
+ CZE_west_slav_union_desc:0 "Zapadoslavia"
  CZE_pan_slav:0 "Greater Pan-Slavic Union"
  CZE_pan_slav_desc:0 "the Greater Pan-Slavic Union"

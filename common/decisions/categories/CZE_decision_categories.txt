@@ -138,6 +138,7 @@ CZE_reintegrate_slovakia = {
 		set_country_flag = CZE_Slovakia_Autonomy
 	}
 }
+
 CZE_fascist_marches = { 
 
 	icon = saf_anti_colonialist_crusade
@@ -149,7 +150,37 @@ CZE_fascist_marches = {
 	priority = 7
 	
 	visible = {
-		set_country_flag = CZE_Slovakia_Autonomy
+		has_completed_focus = CZE_rally_czech_nationalists
+	}
+}
+
+CZE_supporting_nationalists = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		set_country_flag = align_nationalists
+	}
+}
+
+CZE_the_russian_exiles = { 
+
+	icon = saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		set_country_flag = russian_exiles
 	}
 }
 
