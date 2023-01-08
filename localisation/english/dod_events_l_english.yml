@@ -970,6 +970,11 @@
  czech.64.a:0 "We have no choice."
  czech.64.b:0 "Never Surrender!"
  
+ czech.64.t:0 ""
+ czech.64.d:0 "."
+ czech.64.a:0 "Support nationalist causes!"
+ czech.64.b:0 "Contact White Russians in exile!"
+ 
  dod_news.1.t:1 "Little Entente Reaffirmed"
  dod_news.1.d:0 "[From.GetName] has today announced that the almost-defunct 'Little Entente' alliance system will stand by their commitments. A statement released by the [From.GetNameAdj] Foreign office announced:\n'[From.GetName] is not a Great Power, but it is a Regional Power. It is our firm belief that an alliance of Regional Powers can and will prevent the so-called Great Powers from meddling in our affairs."
  dod_news.1.a:1 "Together we are a Great Power."
