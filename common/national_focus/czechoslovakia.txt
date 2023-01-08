@@ -4403,7 +4403,7 @@
 		id = CZE_czechoslovak_legion
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = CZE_strategy_decisions }
-		x = 23
+		x = 21
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 

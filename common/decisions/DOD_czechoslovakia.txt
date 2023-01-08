@@ -459,15 +459,15 @@ CZE_italian_slav_alliance = {
 		}
 		remove_effect = {
 			    add_equipment_to_stockpile = {
-    			    type = medium_tank_equipment  
+    			    type = medium_tank_chassis_0  
     			    amount = 500
 			    }
 				add_equipment_to_stockpile = {
-    			    type = light_tank_equipment  
+    			    type = light_tank_chassis_1  
     			    amount = 500
 			    }
 				add_equipment_to_stockpile = {
-    			    type = heavy_tank_equipment  
+    			    type = heavy_tank_chassis_0  
     			    amount = 500
 			    }
 		}
@@ -539,12 +539,17 @@ CZE_italian_slav_alliance = {
 		}
 		remove_effect = {
 			add_equipment_to_stockpile = {
-                type = fighter_equipment
+                type = small_plane_airframe_0
                 amount = 50
                 producer = ITA
             }
 			add_equipment_to_stockpile = {
-		        type = CAS_equipment
+		        type = medium_plane_airframe_0
+		        amount = 25
+		        producer = ITA
+		    }
+			add_equipment_to_stockpile = {
+		        type = large_plane_airframe_0
 		        amount = 25
 		        producer = ITA
 		    }

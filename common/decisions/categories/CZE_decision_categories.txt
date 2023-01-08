@@ -180,7 +180,7 @@ CZE_the_russian_exiles = {
 	priority = 7
 	
 	visible = {
-		set_country_flag = russian_exiles
+		has_country_flag = russian_exiles
 	}
 }
 
