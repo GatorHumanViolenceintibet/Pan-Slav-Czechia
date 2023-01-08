@@ -118,8 +118,14 @@ CZE_the_powderkeg = {
 			original_tag = CZE
 		}
 		available = {
-			NOT = {
-			    is_in_faction_with = ITA
+		    AND = {
+			    NOT = {
+			        is_in_faction_with = ITA
+			    }
+                OR = {
+				    has_completed_focus = CZE_infiltrate_the_nazi_regime
+					has_completed_focus = CZE_ally_italy
+				}
 			}
 		}
 		
@@ -3945,7 +3951,7 @@ CZE_the_russian_exiles = {
 		remove_effect = {
 			add_timed_idea = {
                 idea = CZE_tsarist_propaganda
-                days = 90
+                days = 185
             }
 		}
 	}
@@ -3995,12 +4001,15 @@ CZE_the_russian_exiles = {
                     infantry = { x = 0 y = 0 }
                     infantry = { x = 0 y = 1 }
                     infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
                     infantry = { x = 1 y = 0 }
                     infantry = { x = 1 y = 1 }
                     infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
                 }
                 support = { 
                     recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 0 }
                 } 
             }
             9 = {
