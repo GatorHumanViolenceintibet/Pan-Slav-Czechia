@@ -1679,9 +1679,9 @@ country_event = {
 		}
 		CZE = {
 		    puppet = GRE
+			transfer_state = 731
+		    transfer_state = 184
 		}
-		transfer_state = 731
-		transfer_state = 184
 	}
 }
 

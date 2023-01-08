@@ -674,7 +674,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				fascism_drift = 0.35
+				fascism_drift = 0.25
 				fascism_acceptance = 100
 			}
 		}
