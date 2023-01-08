@@ -1884,6 +1884,8 @@ CZE_supporting_nationalists = {
 				
 		days_remove = 120
 		
+		fire_only_once = yes
+		
 		visible = {
 			has_country_flag = align_nationalists
 		}
@@ -1899,6 +1901,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_ukrainians
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_ukrainian_nationalists = {
@@ -1951,6 +1957,7 @@ CZE_supporting_nationalists = {
 				
 		days_remove = 120
 		
+		fire_only_once = yes
 		
 		visible = {
 			has_country_flag = align_nationalists
@@ -1967,6 +1974,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_belarusians
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_belarusian_nationalists = {
@@ -2019,6 +2030,8 @@ CZE_supporting_nationalists = {
 				
 		days_remove = 120
 		
+		fire_only_once = yes
+		
 		visible = {
 			has_country_flag = align_nationalists
 		}
@@ -2034,6 +2047,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_karelians
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_karelian_nationalists = {
@@ -2086,6 +2103,8 @@ CZE_supporting_nationalists = {
 				
 		days_remove = 120
 		
+		fire_only_once = yes
+		
 		visible = {
 			has_country_flag = align_nationalists
 		}
@@ -2101,6 +2120,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_caucasians
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_nationalists_in_the_caucuses = {
@@ -2153,6 +2176,8 @@ CZE_supporting_nationalists = {
 				
 		days_remove = 120
 		
+		fire_only_once = yes
+		
 		visible = {
 			has_country_flag = align_nationalists
 		}
@@ -2168,6 +2193,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_central_asians
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_nationalists_in_central_asia = {
@@ -2220,6 +2249,8 @@ CZE_supporting_nationalists = {
 				
 		days_remove = 120
 		
+		fire_only_once = yes
+		
 		visible = {
 			has_country_flag = align_nationalists
 		}
@@ -2235,6 +2266,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_tartars
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_tartar_nationalists = {
@@ -2286,6 +2321,8 @@ CZE_supporting_nationalists = {
 		}
 				
 		days_remove = 120
+		
+		fire_only_once = yes
 				
 		visible = {
 			has_country_flag = align_nationalists
@@ -2302,6 +2339,10 @@ CZE_supporting_nationalists = {
 		}
 		remove_effect = {
 			set_country_flag = arming_cossacks
+			SOV = {
+			    add_stability = -0.05
+				add_war_support = -0.08
+			}
 		}
 	}
 	CZE_arm_cossack_nationalists = {

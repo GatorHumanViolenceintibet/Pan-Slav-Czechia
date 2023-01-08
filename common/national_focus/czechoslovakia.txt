@@ -2504,10 +2504,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			declare_war_on = {
-                target = TUR
-                type = annex_everything
-            }
+			create_wargoal = {
+				type = annex_everything
+				target = TUR
+				expire = 0
+			}
 		}
 	}
 
@@ -2725,17 +2726,6 @@
 			owns_state = 68
 			owns_state = 66
 			owns_state = 67
-			owns_state = 84
-			owns_state = 82
-			owns_state = 80
-			owns_state = 76
-			owns_state = 77
-			owns_state = 766
-			owns_state = 79
-			owns_state = 78
-			owns_state = 83
-			owns_state = 81
-			owns_state = 46
 			owns_state = 72
 			owns_state = 94
 			owns_state = 91
@@ -2843,7 +2833,6 @@
             owns_state = 589
             owns_state = 565
             owns_state = 406
-            owns_state = 555
             owns_state = 824
             owns_state = 586
             owns_state = 821
