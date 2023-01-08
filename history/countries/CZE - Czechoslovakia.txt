@@ -74,19 +74,7 @@ recruit_character = CZE_jozef_tiso
 recruit_character = CZE_vojtech_tuka
 recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak
-recruit_character = CZE_josef_balaban
-recruit_character = CZE_josef_bily
-recruit_character = CZE_jaroslav_cihak
-recruit_character = CZE_alois_elias
-recruit_character = CZE_bedrich_homola
-recruit_character = CZE_sergej_ingr
-recruit_character = CZE_karel_klapalek
-recruit_character = CZE_lev_prchala
 recruit_character = CZE_jan_syrovy
-recruit_character = CZE_josef_zmek
-recruit_character = CZE_josef_votruba
-recruit_character = CZE_bedrich_neumann
-recruit_character = CZE_bohumil_bocek
 
 
 if = {

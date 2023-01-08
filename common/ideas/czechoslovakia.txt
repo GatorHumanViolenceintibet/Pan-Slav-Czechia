@@ -869,6 +869,27 @@ ideas = {
 				attrition = -0.15
 			}
 		}
+		
+		CZE_slovak_autonomy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = idea_YUG_federal_defense_council
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.08
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.09
+			}
+		}
 
 	}
 

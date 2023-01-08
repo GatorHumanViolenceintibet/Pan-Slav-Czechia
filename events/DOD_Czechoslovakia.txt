@@ -1803,6 +1803,7 @@ country_event = {
 			factor = 0
 		}
 		remove_ideas = CZE_divided_nation
+		add_ideas = CZE_slovak_autonomy
 		release_puppet = SLO
 		SLO = {
 		    set_cosmetic_tag = CZE_SLO
