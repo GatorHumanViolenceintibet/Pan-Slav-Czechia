@@ -4038,6 +4038,40 @@ CZE_the_russian_exiles = {
             }
 		}
 	}
+	CZE_declare_war_on_SOV = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    has_country_flag = russian_exiles
+		}
+				
+		days_remove = 100
+		
+		days_re_enable = 70
+		
+		visible = {
+		    has_country_flag = russian_exiles
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		remove_effect = {
+			CZE = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+		}
+	}
 }
 
 economy_decisions = {
