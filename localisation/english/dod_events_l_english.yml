@@ -970,8 +970,26 @@
  czech.64.a:0 "We have no choice."
  czech.64.b:0 "Never Surrender!"
  
- czech.74.t:0 ""
- czech.74.d:0 "."
+ czech.70.t:0 ""
+ czech.70.d:0 "."
+ czech.70.a:0 "."
+ czech.70.b:0 ""
+ 
+ czech.72.t:0 "Romania refuses our proposition!"
+ czech.72.d:0 "Unfortunately, our meeting with the Romanian delegation in Brasov was unsuccessful, they have refused to provide support for our invasion of Hungary. We are on our own, though that likely shouldn't matter, as our military is still larger than theirs at the moment."
+ czech.72.a:0 "Fine, we'll march into Budapest ourselves!"
+ 
+ czech.73.t:0 "Romania accepts our proposal!"
+ czech.73.d:0 "We have met with the Romanian representatives in Brasov to discuss the possibility of an offensive military intervention into Hungary, they have agreed to our proposals and will provide direct military assistance as soon as we attack.."
+ czech.73.a:0 "Let us create an even Lesser Hungary!"
+ 
+ czech.71.t:0 "Curtailing Slovak Separatists"
+ czech.71.d:0 "Our struggle against the Soviet Union is going to be a persistent one, we should make sure we have people on our side who are familiar with the land and can help us govern it and drive up recruitment.\n\n On one hand, there are the regional nationalists, they could provide us with an effective fifth-column to undermine the Bolsheviks behind their backs."
+ czech.71.a:0 " It is necessary to make concessions, for now."
+ czech.71.b:0 "We will snuff them out, permanently."
+ 
+ czech.74.t:0 "Choosing Anti-Bolshevik Partners"
+ czech.74.d:0 "On one hand, there are the regional nationalists, they could provide us with an effective fifth-column to undermine the Bolsheviks behind their backs.\n\n On the other, there are many various groups of White Emigrés across the world who would be more than willing to help us pursue their Tsarist cause through various means.."
  czech.74.a:0 "Support nationalist causes!"
  czech.74.b:0 "Contact White Russians in exile!"
  

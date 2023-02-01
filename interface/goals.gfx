@@ -3793,5 +3793,12 @@ spriteTypes = {
 		name = "GFX_focus_SWI_spirit_of_resistance"
 		texturefile = "gfx/interface/goals/focus_SWI_spirit_of_resistance.dds"
 	}
-
+	SpriteType = { 
+		name = "GFX_focus_CZE_armourys"
+		texturefile = "gfx/interface/goals/focus_CZE_armourys.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_pan_slavism"
+		texturefile = "gfx/interface/goals/focus_pan_slavism.dds"
+	}
 }

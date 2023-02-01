@@ -1895,4 +1895,19 @@ spriteTypes = {
 		name = "GFX_decision_generic_cavalry"
 		texturefile = "gfx/interface/decisions/decision_generic_cavalry.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_slovaks"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_slovaks.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_russians"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_russians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_nationalists_sov"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_nationalists_sov.dds"
+	}
 }

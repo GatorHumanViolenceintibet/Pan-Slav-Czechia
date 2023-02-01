@@ -3165,5 +3165,12 @@ spriteTypes = {
 		name = "GFX_news_event_ITA_civil_war"
 		texturefile = "gfx/event_pictures/news_event_ITA_civil_war.dds"
 	}
-	
+	spriteType = { 
+		name = "GFX_report_event_cze_slovaks"
+		texturefile = "gfx/event_pictures/report_event_cze_slovaks.dds"
+	}
+	spriteType = { 
+		name = "GFX_report_event_cze_russians"
+		texturefile = "gfx/event_pictures/report_event_cze_russians.dds"
+	}
 }

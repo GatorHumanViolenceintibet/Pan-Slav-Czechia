@@ -2085,7 +2085,7 @@
 
 	focus = {
 		id = CZE_rally_czech_nationalists
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_focus_ITA_generic_fascist_workers
 		prerequisite = { focus = CZE_strategy_decisions }
 		mutually_exclusive = { focus = CZE_trust_in_the_west focus = CZE_an_entente_of_our_own focus = CZE_german_leanings }
 		x = 5
@@ -2132,7 +2132,7 @@
 
 	focus = {
 		id = CZE_stage_the_coup
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = CZE_rally_czech_nationalists }
 		x = 0
 		y = 1
@@ -2257,7 +2257,7 @@
 
 	focus = {
 		id = CZE_the_devil_next_door
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_SWI_fortify_border_with_germany
 		prerequisite = { focus = CZE_pursue_pan_slavism }
 		x = -4
 		y = 1
@@ -2432,7 +2432,7 @@
 
 	focus = {
 		id = CZE_securing_the_powderkeg
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_BUL_the_fate_of_the_balkans
 		prerequisite = { focus = CZE_slavic_unity }
 		x = 0
 		y = 1
@@ -2471,7 +2471,7 @@
 
 	focus = {
 		id = CZE_gut_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_generic_attack_turkey
 		prerequisite = { focus = CZE_securing_the_powderkeg }
 		x = 0
 		y = 1
@@ -2554,7 +2554,7 @@
 
 	focus = {
 		id = CZE_slavic_finnish_alliance
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_invite_finland
 		prerequisite = { focus = CZE_preemptive_strike }
 		x = 6
 		y = 1
@@ -2678,7 +2678,7 @@
 	
 	focus = {
 		id = CZE_declare_the_greater_pan_slavic_union
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_pan_slavism
 		prerequisite = { focus = CZE_crush_bolshevism }
 		x = 0
 		y = 1
@@ -3354,7 +3354,7 @@
 
 	focus = {
 		id = CZE_expand_the_czechoslovak_armoury
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_focus_CZE_armourys
 		prerequisite = { focus = CZE_pursue_corporatism }
 		x = 1
 		y = 1
@@ -3597,7 +3597,7 @@
 
 	focus = {
 		id = CZE_czech_shocktroopers
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = CZE_legionary_veteran_training_centers }
 		x = -2
 		y = 1

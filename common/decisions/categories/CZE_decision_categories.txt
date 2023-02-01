@@ -83,6 +83,8 @@ CZE_crush_slovak_nationalists = {
 
 	icon = saf_anti_colonialist_crusade
 	
+	picture = GFX_decision_cat_generic_slovaks
+	
 	allowed = {
 		original_tag = CZE
 	}
@@ -154,21 +156,6 @@ CZE_fascist_marches = {
 	}
 }
 
-CZE_supporting_nationalists = { 
-
-	icon = saf_anti_colonialist_crusade
-	
-	allowed = {
-		original_tag = CZE
-	}
-	
-	priority = 7
-	
-	visible = {
-		set_country_flag = align_nationalists
-	}
-}
-
 CZE_the_russian_exiles = { 
 
 	icon = saf_anti_colonialist_crusade
@@ -188,6 +175,8 @@ CZE_integrate_puppets = {
 
 	icon = saf_anti_colonialist_crusade
 	
+	picture = GFX_decision_cat_generic_nationalists_sov
+	
 	allowed = {
 		original_tag = CZE
 	}
@@ -199,3 +188,19 @@ CZE_integrate_puppets = {
 	}
 }
 
+CZE_Nationalists_funding = {
+	
+	icon = saf_anti_colonialist_crusade
+	
+	picture = GFX_decision_cat_generic_nationalists_sov 
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_country_flag = align_nationalists
+	}
+}

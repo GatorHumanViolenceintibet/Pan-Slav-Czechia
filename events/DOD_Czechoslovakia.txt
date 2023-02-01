@@ -1793,7 +1793,7 @@ country_event = {
 	id = czech.71
 	title = czech.71.t
 	desc = czech.71.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_cze_slovaks
 	
 	is_triggered_only = yes
 	
@@ -1903,7 +1903,7 @@ country_event = {
 	id = czech.74
 	title = czech.74.t
 	desc = czech.74.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_cze_russians
 	
 	is_triggered_only = yes
 	
@@ -1913,6 +1913,9 @@ country_event = {
 			factor = 0
 		}
         set_country_flag = align_nationalists
+		set_variable = { supplies = 0 }
+		set_variable = { readiness = 0 }
+		set_variable = { agitation = 0 }
 	}
 	option = {
 		name = czech.74.b 
