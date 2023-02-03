@@ -3741,7 +3741,7 @@ CZE_Purchase_Allied_Colonies = {
 			}
 		}
 		complete_effect = {
-			ENG = { country_event = { hours = 1 id = czech.38 } }
+			ENG = { country_event = { hours = 1 id = czech.37 } }
 			BEL = { country_event = { hours = 1 id = czech.40 } }
 		}
 	}
@@ -3830,6 +3830,34 @@ CZE_Purchase_Allied_Colonies = {
 			}
 		}
 		complete_effect = {
+		    release_puppet = TOG
+			297 = {
+		        transfer_state_to = TOG
+		    }
+			558 = {
+		        transfer_state_to = TOG
+		    }
+		    902 = {
+		        transfer_state_to = TOG
+		    }
+		    900 = {
+		        transfer_state_to = TOG
+		    }
+		    901 = {
+		        transfer_state_to = TOG
+		    }
+			777 = {
+		        transfer_state_to = TOG
+		    }
+		    776 = {
+		        transfer_state_to = TOG
+		    }
+		    773 = {
+		        transfer_state_to = TOG
+		    }
+			TOG = {
+			    set_cosmetic_tag = CSWA
+			}
 		}
 	}
 }

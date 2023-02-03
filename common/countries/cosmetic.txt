@@ -1,3 +1,7 @@
+CSWA = {	
+    color = rgb { 47 154 158 }
+	color_ui = rgb { 47 154 158 }
+}
 CZE_SLO = {	
     color = rgb { 77 138 132 }
 	color_ui = rgb { 77 138 132 }
