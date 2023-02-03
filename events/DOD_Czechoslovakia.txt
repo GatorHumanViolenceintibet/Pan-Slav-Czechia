@@ -975,6 +975,127 @@ country_event = {
 	}
 }
 
+# Czechoslovakia asks UK to purchase East africa
+country_event = {
+	id = czech.37
+	title = czech.37.t
+	desc = czech.37.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.37.a #NO
+		ai_chance = {
+			factor = 0
+		}
+		CZE = { country_event = { hours = 1 id = czech.38 } }
+	}
+	
+	option = {
+		name = czech.37.b #YES
+		ai_chance = {
+			factor = 100
+		}
+		CZE = { country_event = { hours = 1 id = czech.39 } }
+		add_political_power = 50
+	}
+}
+
+# UK say no
+country_event = {
+	id = czech.38
+	title = czech.38.t
+	desc = czech.38.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.38.a #NO
+		
+	}
+}
+
+# UK say yes
+country_event = {
+	id = czech.39
+	title = czech.39.t
+	desc = czech.39.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.39.a #YES
+		546 = {
+		    transfer_state_to = CZE
+		}
+	}
+}
+
+# Czechoslovakia asks Belgium to purchase Rwanda_and_Burundi
+country_event = {
+	id = czech.40
+	title = czech.40.t
+	desc = czech.40.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.40.a #NO
+		ai_chance = {
+			factor = 0
+		}
+		CZE = { country_event = { hours = 1 id = czech.41 } }
+	}
+	
+	option = {
+		name = czech.40.b #YES
+		ai_chance = {
+			factor = 100
+		}
+		CZE = { country_event = { hours = 1 id = czech.42 } }
+		add_political_power = 50
+	}
+}
+
+# BEL say no
+country_event = {
+	id = czech.41
+	title = czech.41.t
+	desc = czech.41.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.41.a #NO
+		
+	}
+}
+
+# BEL say yes
+country_event = {
+	id = czech.42
+	title = czech.42.t
+	desc = czech.42.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.42.a #YES
+		768 = {
+		    transfer_state_to = CZE
+		}
+		769 = {
+		    transfer_state_to = CZE
+		}
+	}
+}
+
 # Czechoslovakia asks Italy to be ally
 country_event = {
 	id = czech.43
@@ -1111,6 +1232,12 @@ country_event = {
 	option = {
 		name = czech.51.a #YES
 		777 = {
+		    transfer_state_to = CZE
+		}
+		776 = {
+		    transfer_state_to = CZE
+		}
+		773 = {
 		    transfer_state_to = CZE
 		}
 	}
@@ -1923,5 +2050,200 @@ country_event = {
 			factor = 0
 		}
         set_country_flag = russian_exiles
+	}
+}
+
+# Czechoslovakia asks UK to purchase Nigeria
+country_event = {
+	id = czech.75
+	title = czech.75.t
+	desc = czech.75.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.75.a #NO
+		ai_chance = {
+			factor = 0
+		}
+		CZE = { country_event = { hours = 1 id = czech.76 } }
+	}
+	
+	option = {
+		name = czech.75.b #YES
+		ai_chance = {
+			factor = 100
+		}
+		CZE = { country_event = { hours = 1 id = czech.77 } }
+		add_political_power = 50
+	}
+}
+
+# UK say no
+country_event = {
+	id = czech.76
+	title = czech.76.t
+	desc = czech.76.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.76.a #NO
+		
+	}
+}
+
+# UK say yes
+country_event = {
+	id = czech.77
+	title = czech.77.t
+	desc = czech.77.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.77.a #YES
+		558 = {
+		    transfer_state_to = CZE
+		}
+		902 = {
+		    transfer_state_to = CZE
+		}
+		900 = {
+		    transfer_state_to = CZE
+		}
+		901 = {
+		    transfer_state_to = CZE
+		}
+	}
+}
+
+# Czechoslovakia asks SPR to purchase Equatorial Guinea
+country_event = {
+	id = czech.78
+	title = czech.78.t
+	desc = czech.78.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.78.a #NO
+		ai_chance = {
+			factor = 0
+		}
+		CZE = { country_event = { hours = 1 id = czech.79 } }
+	}
+	
+	option = {
+		name = czech.78.b #YES
+		ai_chance = {
+			factor = 100
+		}
+		CZE = { country_event = { hours = 1 id = czech.80 } }
+		add_political_power = 50
+	}
+}
+
+# UK say no
+country_event = {
+	id = czech.79
+	title = czech.79.t
+	desc = czech.79.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.79.a #NO
+		
+	}
+}
+
+# UK say yes
+country_event = {
+	id = czech.80
+	title = czech.80.t
+	desc = czech.80.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.80.a #YES
+		297 = {
+		    transfer_state_to = CZE
+		}
+	}
+}
+
+# Czechoslovakia asks UK to purchase Namibia
+country_event = {
+	id = czech.81
+	title = czech.81.t
+	desc = czech.81.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.81.a #NO
+		ai_chance = {
+			factor = 0
+		}
+		CZE = { country_event = { hours = 1 id = czech.82 } }
+	}
+	
+	option = {
+		name = czech.81.b #YES
+		ai_chance = {
+			factor = 100
+		}
+		CZE = { country_event = { hours = 1 id = czech.83 } }
+		add_political_power = 50
+	}
+}
+
+# UK say no
+country_event = {
+	id = czech.82
+	title = czech.82.t
+	desc = czech.82.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.82.a #NO
+		
+	}
+}
+
+# UK say yes
+country_event = {
+	id = czech.83
+	title = czech.83.t
+	desc = czech.83.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = czech.83.a #YES
+		895 = {
+		    transfer_state_to = CZE
+		}
+		894 = {
+		    transfer_state_to = CZE
+		}
+		541 = {
+		    transfer_state_to = CZE
+		}
+		893 = {
+		    transfer_state_to = CZE
+		}
 	}
 }

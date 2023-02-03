@@ -20,6 +20,8 @@ CZE_slavic_alignment1 = {
 
 	icon = GFX_decision_category_generic_mountain_fortification
 	
+	picture = GFX_decision_cat_generic_pan_slavism
+	
 	allowed = {
 		original_tag = CZE
 	}
@@ -145,6 +147,8 @@ CZE_fascist_marches = {
 
 	icon = saf_anti_colonialist_crusade
 	
+	picture = GFX_decision_cat_generic_marches_cze
+	
 	allowed = {
 		original_tag = CZE
 	}
@@ -202,5 +206,22 @@ CZE_Nationalists_funding = {
 	
 	visible = {
 		has_country_flag = align_nationalists
+	}
+}
+
+CZE_Purchase_Allied_Colonies = {
+	
+	icon = saf_anti_colonialist_crusade
+	
+	picture = GFX_decision_cat_generic_nationalists_sov 
+	
+	allowed = {
+		original_tag = CZE
+	}
+	
+	priority = 7
+	
+	visible = {
+		has_country_flag = purchase_colonies
 	}
 }

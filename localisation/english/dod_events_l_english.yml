@@ -845,16 +845,16 @@
  czech.34.d:2 "Surprising few, [From.GetLeader] has rejected our offer, citing our unwillingness to surrender certain territories to Hungary."
  czech.34.a:1 "Nothing new, then."
  
- czech.37.t:0 "The Czechoslovak Empire asks us to join their Alliance"
- czech.37.d:0 "Envoys from the Czechoslovak Empire met with members of our cabinet to discuss matters of an alliance. These matters have now been forwarded to our leader."
+ czech.37.t:0 ""
+ czech.37.d:0 "."
  czech.37.a:0 "No."
  czech.37.b:0 "Yes."
  
- czech.38.t:0 "Poland refuses to join our alliance"
+ czech.38.t:0 ""
  czech.38.d:0 "."
  czech.38.a:0 "Damn."
  
- czech.39.t:0 "Poland agrees to join our Alliance"
+ czech.39.t:0 ""
  czech.39.d:0 "."
  czech.39.a:0 "Great."
  
@@ -909,6 +909,11 @@
  czech.51.t:0 "France agrees"
  czech.51.d:0 "."
  czech.51.a:0 "Great."
+ 
+ czech.52.t:0 "The Czechoslovak Empires Ultimatum"
+ czech.52.d:0 "Envoys from the Czechoslovak Empire have informed us that if we do not enter their sphere of influence willingly, military force may be taken against our country."
+ czech.52.a:0 "We have no choice."
+ czech.52.b:0 "Never Surrender!"
  
  czech.53.t:0 "The Czechoslovak Empires Ultimatum"
  czech.53.d:0 "Envoys from the Czechoslovak Empire have informed us that if we do not enter their sphere of influence willingly, military force may be taken against our country."
@@ -984,12 +989,12 @@
  czech.73.a:0 "Let us create an even Lesser Hungary!"
  
  czech.71.t:0 "Curtailing Slovak Separatists"
- czech.71.d:0 "Our struggle against the Soviet Union is going to be a persistent one, we should make sure we have people on our side who are familiar with the land and can help us govern it and drive up recruitment.\n\n On one hand, there are the regional nationalists, they could provide us with an effective fifth-column to undermine the Bolsheviks behind their backs."
+ czech.71.d:0 "The Slovaks have historically been dissatisfied with foreign rule since the 19th century in response to Hungarian attempts at Magyarisation, but now targets us. This cannot stand, we need to take immediate action, question is what exactly?\n\n Our main target is the Slovak People's Party, a clerical fascist group. We have two ways of dealing with them, we can commence an a region-wide crackdown operation on them, permanently removing the problem at a cost to valuable time and resources. Or we can reach out to them and see if we can conclude a mutually beneficial agreement, granting them temporary autonomy in exchange for loyalty."
  czech.71.a:0 " It is necessary to make concessions, for now."
  czech.71.b:0 "We will snuff them out, permanently."
  
  czech.74.t:0 "Choosing Anti-Bolshevik Partners"
- czech.74.d:0 "On one hand, there are the regional nationalists, they could provide us with an effective fifth-column to undermine the Bolsheviks behind their backs.\n\n On the other, there are many various groups of White Emigrés across the world who would be more than willing to help us pursue their Tsarist cause through various means.."
+ czech.74.d:0 "Our struggle against the Soviet Union is going to be a persistent one, we should make sure we have people on our side who are familiar with the land and can help us govern it and drive up recruitment.\n\n On one hand, there are the regional nationalists, they could provide us with an effective fifth-column to undermine the Bolsheviks behind their backs.\n\n On the other, there are many various groups of White Emigrés across the world who would be more than willing to help us pursue their Tsarist cause through various means."
  czech.74.a:0 "Support nationalist causes!"
  czech.74.b:0 "Contact White Russians in exile!"
  

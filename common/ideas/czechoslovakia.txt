@@ -1087,9 +1087,44 @@ ideas = {
 			allowed = {
 				original_tag = CZE
 			}
+			
+			visible = {
+			    NOT = {
+				    has_country_flag = designer_upgrade
+				}
+			}
 
 			research_bonus = {
 				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CZE_zbrojovka_brno = {
+
+			picture = generic_infantry_equipment_manufacturer_2
+
+
+			allowed = {
+				original_tag = CZE
+			}
+			
+			visible = {
+			    has_country_flag = designer_upgrade
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.35
+			}
+			
+			modifier = {
+				breakthrough_factor	= 0.05
+				army_attack_factor	 = 0.05
 			}
 
 			traits = { infantry_equipment_manufacturer }

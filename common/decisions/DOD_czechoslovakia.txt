@@ -3686,6 +3686,153 @@ CZE_Nationalists_funding = {
 		}
 	}
 }
+
+CZE_Purchase_Allied_Colonies = {
+	
+	CZE_Purchase_West_African_Colonies = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = purchase_colonies
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			ENG = { country_event = { hours = 1 id = czech.75 } }
+			FRA = { country_event = { hours = 1 id = czech.49 } }
+		}
+	}
+	CZE_Purchase_Former_German_East_Africa = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = purchase_colonies
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			ENG = { country_event = { hours = 1 id = czech.38 } }
+			BEL = { country_event = { hours = 1 id = czech.40 } }
+		}
+	}
+	CZE_Purchase_Namibia = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = purchase_colonies
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			ENG = { country_event = { hours = 1 id = czech.81 } }
+		}
+	}
+	CZE_Purchase_Equatorial_Guinea = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+			
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = purchase_colonies
+		}
+		cost = 15
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			SPR = { country_event = { hours = 1 id = czech.78 } }
+		}
+	}
+	CZE_Form_Czechoslovak_West_Africa = {
+		allowed = {
+			original_tag = CZE
+		}
+		available = {
+		    AND = {
+			   owns_state = 558
+			   owns_state = 902
+               owns_state = 900
+               owns_state = 901
+               owns_state = 777
+			   owns_state = 776
+			   owns_state = 773
+			}
+		}
+				
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = purchase_colonies
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+		}
+	}
+}
      
 
 economy_decisions = {

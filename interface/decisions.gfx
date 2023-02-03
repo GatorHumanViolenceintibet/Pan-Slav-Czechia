@@ -1910,4 +1910,14 @@ spriteTypes = {
 		name = "GFX_decision_cat_generic_nationalists_sov"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_nationalists_sov.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_pan_slavism"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_pan_slavism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_marches_cze"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_marches_cze.dds"
+	}
 }

@@ -3801,4 +3801,12 @@ spriteTypes = {
 		name = "GFX_focus_pan_slavism"
 		texturefile = "gfx/interface/goals/focus_pan_slavism.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_cze_balkans"
+		texturefile = "gfx/interface/goals/focus_cze_balkans.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_CZE_slovak_question"
+		texturefile = "gfx/interface/goals/focus_CZE_slovak_question.dds"
+	}
 }
