@@ -3861,6 +3861,7 @@ CZE_Purchase_Allied_Colonies = {
 		}
 	}
 }
+
      
 
 economy_decisions = {

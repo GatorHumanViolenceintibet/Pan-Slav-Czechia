@@ -628,7 +628,7 @@
  CZE_slavic_finnish_alliance_desc:0 "Finland has every reason to hate Moscow, they were conquered by them, subsequently granted limited autonomy, only to have it taken away by Tsar Nicholas II, the Reds would then try to stage a revolution over there, in under a year, no less. It is clear our interests align almost perfectly, let's reach out to Helsinki."
  CZE_colonial_ambitions:0 "Colonial Ambitions"
  CZE_colonial_ambitions_desc:0 "What any great Empire needs are colonies, stretches of land on other continents great or small. We shall now divert our attention and allocate funds towards this goal, to truly cement ourselves as a respected equal on the global stage."
- CZE_purchase_togo:0 "Purchase Allied-African Colonies"
+ CZE_purchase_togo:0 "Purchase European-African Colonies"
  CZE_purchase_togo_desc:0 ""
  CZE_dominion_over_asia:0 "Dominion over Asia"
  CZE_dominion_over_asia_desc:0 "With Siberia, Central Asia and the Far East in our hands, we should reach out into East Asia. China is weak and divided, Japan is an archaic society with limited potential, and the Western Europeans need to be relinquished of the draconian hold on their respective Colonies."
@@ -640,8 +640,6 @@
  CZE_securing_the_powderkeg_desc:0 "The Balkans have always been one of the most troubled parts of Europe, acting as a vital crossing point from Anatolia to the heart of the Continent, making it an enticing targets for any large empires in the area, as well as a hotbed for rebellions and so on. The former is no longer the case, but there is no doubt the latter must end too. We will extinguish this bright flame, once and for all."
  CZE_gut_turkey:0 "Gut Turkey"
  CZE_gut_turkey_desc:0 "Turkey's position on the geopolitical stage is a unique one, birthed from the abrupt collapse of the Ottoman Empire, it was only their determination during their independence war that prevented them from becoming a vassal of the colonial empires. Nevertheless, they hold a vital strategic location in the form of the Bosporus Strait, the only way in and out of the Black Sea, so we have to secure it."
- 
- 
  CZE_the_slovak_question:0 "The Slovak Question"
  CZE_the_slovak_question_desc:0 "Our nation was founded as a union of Czechs and Slovaks from the very beginning. However, certain groups within the latter half of the country don't see it that way, unfortunately, so we will have to decide what to do with them."
  CZE_powderkeg:0 "§Y[ROOT.GetName]§! gets decisions to align §YYugoslavia§!, §YBulgaria§!, §YGreece§! and §YAlbania§!."
