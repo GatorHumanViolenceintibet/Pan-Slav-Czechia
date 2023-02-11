@@ -3852,6 +3852,14 @@ CZE_Purchase_Allied_Colonies = {
 		    }
 			TOG = {
 			    set_cosmetic_tag = CSWA
+				add_state_core = 297
+                add_state_core = 558
+				add_state_core = 902
+				add_state_core = 900
+				add_state_core = 901
+				add_state_core = 777
+				add_state_core = 776
+				add_state_core = 773
 			}
 		}
 	}
