@@ -845,29 +845,29 @@
  czech.34.d:2 "Surprising few, [From.GetLeader] has rejected our offer, citing our unwillingness to surrender certain territories to Hungary."
  czech.34.a:1 "Nothing new, then."
  
- czech.37.t:0 ""
+ czech.37.t:0 "Czechoslovakia asks to purchase Tanzania"
  czech.37.d:0 "."
  czech.37.a:0 "No."
  czech.37.b:0 "Yes."
  
- czech.38.t:0 ""
+ czech.38.t:0 "The British have refused our offer"
  czech.38.d:0 "."
  czech.38.a:0 "Damn."
  
- czech.39.t:0 ""
+ czech.39.t:0 "The British have agreed to our request"
  czech.39.d:0 "."
  czech.39.a:0 "Great."
  
- czech.40.t:0 ""
+ czech.40.t:0 "Czechoslovakia asks to purchase Rwanda and Burundi"
  czech.40.d:0 "."
  czech.40.a:0 "No."
  czech.40.b:0 "Yes."
  
- czech.41.t:0 ""
+ czech.41.t:0 "Belgium refuses our offer"
  czech.41.d:0 "."
  czech.41.a:0 "Damn."
  
- czech.42.t:0 ""
+ czech.42.t:0 "Belgium has accepted our offer"
  czech.42.d:0 "."
  czech.42.a:0 "Great."
  
@@ -897,8 +897,8 @@
  czech.48.d:0 "."
  czech.48.a:0 "Great."
  
- czech.49.t:0 "The Czechoslovak Empire asks if we'd be interested in selling them Togo"
- czech.49.d:0 "Envoys from the Czechoslovak Empire met with members of our cabinet to discuss the possible sale of Togo being sold to their country. These matters have now been forwarded to our leader."
+ czech.49.t:0 "Czechoslovakia has offered to purchase Benin, Togo, and Cameroon"
+ czech.49.d:0 "."
  czech.49.a:0 "No."
  czech.49.b:0 "Yes."
  
@@ -906,7 +906,7 @@
  czech.50.d:0 "."
  czech.50.a:0 "Damn."
  
- czech.51.t:0 "France agrees"
+ czech.51.t:0 "France agrees to our request"
  czech.51.d:0 "."
  czech.51.a:0 "Great."
  
@@ -975,10 +975,10 @@
  czech.64.a:0 "We have no choice."
  czech.64.b:0 "Never Surrender!"
  
- czech.70.t:0 ""
+ czech.70.t:0 "Czechoslovakia requests a joint intervention in Hungary"
  czech.70.d:0 "."
- czech.70.a:0 "."
- czech.70.b:0 ""
+ czech.70.a:0 "No."
+ czech.70.b:0 "Yes."
  
  czech.72.t:0 "Romania refuses our proposition!"
  czech.72.d:0 "Unfortunately, our meeting with the Romanian delegation in Brasov was unsuccessful, they have refused to provide support for our invasion of Hungary. We are on our own, though that likely shouldn't matter, as our military is still larger than theirs at the moment."
@@ -997,6 +997,45 @@
  czech.74.d:0 "Our struggle against the Soviet Union is going to be a persistent one, we should make sure we have people on our side who are familiar with the land and can help us govern it and drive up recruitment.\n\n On one hand, there are the regional nationalists, they could provide us with an effective fifth-column to undermine the Bolsheviks behind their backs.\n\n On the other, there are many various groups of White Emigrés across the world who would be more than willing to help us pursue their Tsarist cause through various means."
  czech.74.a:0 "Support nationalist causes!"
  czech.74.b:0 "Contact White Russians in exile!"
+ 
+ czech.75.t:0 "Czechoslovakia offers to purchase Nigeria"
+ czech.75.d:0 "."
+ czech.75.a:0 "No."
+ czech.75.b:0 "Yes."
+ 
+ czech.76.t:0 "The British refuse our offer"
+ czech.76.d:0 "."
+ czech.76.a:0 "Damn."
+ 
+ czech.77.t:0 "The British accept our offer"
+ czech.77.d:0 "."
+ czech.77.a:0 "Great."
+ 
+ czech.78.t:0 "Czechoslovakia offers to purchase Equatorial Guinea"
+ czech.78.d:0 "."
+ czech.78.a:0 "No."
+ czech.78.b:0 "Yes."
+ 
+ czech.79.t:0 "The Spanish refuse our offer"
+ czech.79.d:0 "."
+ czech.79.a:0 "Damn."
+ 
+ czech.80.t:0 "The Spanish accept our offer"
+ czech.80.d:0 "."
+ czech.80.a:0 "Great."
+ 
+ czech.81.t:0 "Czechoslovakia offers to purchase Namibia"
+ czech.81.d:0 "."
+ czech.81.a:0 "No."
+ czech.81.b:0 "Yes."
+ 
+ czech.82.t:0 "The British refuse our offer"
+ czech.82.d:0 "."
+ czech.82.a:0 "Damn."
+ 
+ czech.83.t:0 "The British accept our offer"
+ czech.83.d:0 "."
+ czech.83.a:0 "Great."
  
  dod_news.1.t:1 "Little Entente Reaffirmed"
  dod_news.1.d:0 "[From.GetName] has today announced that the almost-defunct 'Little Entente' alliance system will stand by their commitments. A statement released by the [From.GetNameAdj] Foreign office announced:\n'[From.GetName] is not a Great Power, but it is a Regional Power. It is our firm belief that an alliance of Regional Powers can and will prevent the so-called Great Powers from meddling in our affairs."

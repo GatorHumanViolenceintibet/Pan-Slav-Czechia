@@ -3166,6 +3166,7 @@
 
 		completion_reward = {
 			set_country_flag = purchase_colonies
+			custom_effect_tooltip = Colonies_CZE
 		}
 	}
 	

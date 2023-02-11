@@ -352,11 +352,6 @@ CZE_italian_slav_alliance = {
 			}
 		}
 		remove_effect = {
-			create_railway_gun = {
-                equipment = railway_gun_equipment_1
-	            name = TAG_new_railway_gun
-	            location = 3569
-            }
 			add_equipment_to_stockpile = {
                 type = infantry_equipment
                 amount = 2500

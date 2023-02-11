@@ -29,16 +29,15 @@ CZE_slavic_alignment1 = {
 	priority = 7
 	
 	visible = {
-	    OR = {
-		    has_completed_focus = CZE_slavic_unity
-			has_completed_focus = CZE_slavic_brotherhood
-		}
+		has_completed_focus = CZE_slavic_unity
 	}
 }
 
 CZE_standing_alone = { 
 
 	icon = GFX_decision_category_generic_mountain_fortification
+	
+	picture = GFX_decision_cat_by_ourselves
 	
 	allowed = {
 		original_tag = CZE
@@ -54,6 +53,8 @@ CZE_standing_alone = {
 CZE_italian_slav_alliance = { 
 
 	icon = GFX_decision_category_generic_mountain_fortification
+	
+	picture = GFX_decision_cat_italy_buddy
 	
 	allowed = {
 		original_tag = CZE
@@ -163,6 +164,8 @@ CZE_fascist_marches = {
 CZE_the_russian_exiles = { 
 
 	icon = saf_anti_colonialist_crusade
+	
+	picture = GFX_decision_cat_russian_exiles
 	
 	allowed = {
 		original_tag = CZE
