@@ -1079,7 +1079,7 @@ ideas = {
 
 		designer = yes
 
-		CZE_zbrojovka_brno = {
+		CZE_zbrojovka_brno2 = {
 
 			picture = generic_infantry_equipment_manufacturer_2
 
@@ -1124,7 +1124,7 @@ ideas = {
 			
 			modifier = {
 				breakthrough_factor	= 0.05
-				army_attack_factor	 = 0.05
+				army_attack_factor = 0.05
 			}
 
 			traits = { infantry_equipment_manufacturer }

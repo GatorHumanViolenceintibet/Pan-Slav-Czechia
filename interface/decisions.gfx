@@ -1935,4 +1935,9 @@ spriteTypes = {
 		name = "GFX_decision_cat_by_ourselves"
 		texturefile = "gfx/interface/decisions/by_ourselves.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_our_africa"
+		texturefile = "gfx/interface/decisions/our_africa.dds"
+	}
 }
