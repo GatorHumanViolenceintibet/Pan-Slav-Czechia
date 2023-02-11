@@ -1751,7 +1751,7 @@ country_event = {
 		CZE = {
 		    create_wargoal = {
 				type = annex_everything
-				target = YUG
+				target = BUL
 				expire = 0
 			}
 		}
