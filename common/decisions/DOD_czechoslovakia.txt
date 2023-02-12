@@ -838,7 +838,6 @@ CZE_field_command_for_radola_gadja = {
 		visible = {
 			has_completed_focus = CZE_stage_the_coup
 		}
-		cost = 25
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -850,6 +849,9 @@ CZE_field_command_for_radola_gadja = {
 		}
 		complete_effect = {
 			set_country_flag = Gadja_Field_Command
+			add_war_support = 0.05
+			add_political_power = 25
+			army_experience = 5
 		}
 	}
 }

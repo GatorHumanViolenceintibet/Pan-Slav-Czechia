@@ -731,7 +731,7 @@ ideas = {
 				has_government = fascism
 			}
 
-			picture = idea_YUG_federal_defense_council
+			picture = FRA_fortification_focus
 
 			removal_cost = -1
 
@@ -756,7 +756,7 @@ ideas = {
 				has_government = fascism
 			}
 
-			picture = idea_YUG_federal_defense_council
+			picture = FRA_fortification_focus
 
 			removal_cost = -1
 
